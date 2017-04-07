@@ -1,0 +1,641 @@
+# Project title    
+
+### Author: ANTdrew D. Nguyen     
+### Ecological Genomics:   
+
+## Overall Description of notebook      
+
+fill in your description here!
+
+
+## Date started: (year-month-day)   
+## Date end:   (year-month-day)    
+
+## Philosophy   
+Science should be reproducible and one of the best ways to achieve this is by logging research activities in a notebook. Because science/biology has increasingly become computational, it is easier to document computational projects in an electronic form, which can be shared online through Github.    
+
+### Helpful features of the notebook     
+
+**It is absolutely critical for your future self and others to follow your work.**     
+
+* The notebook is set up with a series of internal links from the table of contents.    
+* All notebooks should have a table of contents which has the "Entry", date, and title (information that allows the reader to understand your work).     
+* Also, one of the perks of keeping all activities in a single document is that you can **search and find elements quickly**.     
+* You can document anything you'd like, aside from logging your research activities. For example:
+	* feel free to log all/any ideas for your research project([example](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md#Entry-39-2016-06-13-post-doc-project-idea-assessing-current-impacts-of-climate-change-in-natural-populations)) as an entry,     
+	* or write down notes for a paper([example](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md#id-section36).      
+
+* Lastly, you can share specific entries because of the three "#" automatically creates a link when the notebook renders on github.      
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.  
+
+
+### Table of contents for 60 entries (Format is *Entry: Date(with year-month-day). Title*)        
+* [Entry 1: 2017-01-18](#id-section1). First class; intros
+* [Entry 2: 2017-01-23](#id-section2). 
+* [Entry 3: 2017-01-25](#id-section3).
+* [Entry 4:](#id-section4).
+* [Entry 5:](#id-section5).
+* [Entry 6:](#id-section6).
+* [Entry 7:](#id-section7).
+* [Entry 8:](#id-section8).
+* [Entry 9:](#id-section9).
+* [Entry 10:](#id-section10).
+* [Entry 11:](#id-section11).
+* [Entry 12:](#id-section12).
+* [Entry 13:](#id-section13).
+* [Entry 14:](#id-section14).
+* [Entry 15:](#id-section15).
+* [Entry 16:](#id-section16).
+* [Entry 17:](#id-section17).
+* [Entry 18:](#id-section18).
+* [Entry 19:](#id-section19).
+* [Entry 20:](#id-section20).
+* [Entry 21:](#id-section21).
+* [Entry 22:](#id-section22).
+* [Entry 23:](#id-section23).
+* [Entry 24:](#id-section24).
+* [Entry 25:](#id-section25).
+* [Entry 26:](#id-section26).
+* [Entry 27:](#id-section27).
+* [Entry 28:](#id-section28).
+* [Entry 29:](#id-section29).
+* [Entry 30: Code for HW3](#id-section30).
+* [Entry 31:](#id-section31).
+* [Entry 32:](#id-section32).
+* [Entry 33:](#id-section33).
+* [Entry 34:](#id-section34).
+* [Entry 35:](#id-section35).
+* [Entry 36:](#id-section36).
+* [Entry 37:](#id-section37).
+* [Entry 38:](#id-section38).
+* [Entry 39:](#id-section39).
+* [Entry 40:](#id-section40).
+* [Entry 41:](#id-section41).
+* [Entry 42:](#id-section42).
+* [Entry 43:](#id-section43).
+* [Entry 44:](#id-section44).
+* [Entry 45:](#id-section45).
+* [Entry 46:](#id-section46).
+* [Entry 47:](#id-section47).
+* [Entry 48:](#id-section48).
+* [Entry 49:](#id-section49).
+* [Entry 50:](#id-section50).
+* [Entry 51:](#id-section51).
+* [Entry 52:](#id-section52).
+* [Entry 53:](#id-section53).
+* [Entry 54:](#id-section54).
+* [Entry 55:](#id-section55).
+* [Entry 56:](#id-section56).
+* [Entry 57:](#id-section57).
+* [Entry 58:](#id-section58).
+* [Entry 59:](#id-section59).
+* [Entry 60:](#id-section60).
+
+------
+<div id='id-section1'/>
+### Entry 1: 2016-07-18. Ecological genomics, first class (Andrew's notes)
+
+### **Steve and Melissa's intro**    
+* Steve: It is a young field, trying to establish it's own identity    
+	* Ecological genomics institute, KSU: emphasis on adaptation to environment   
+	* Gordon Research Conference: Integrating different levels of biological organization on **ANY SYSTEM**; approach and tool focused! Field going towards new data and new analytic techniques  
+	* Intro to eco genomics, oxford press; Using technology to address ecological issues such as nutrient cycling, population structure, life history vairation , trophic interaction, stress responess, and adpatation to environmental change   
+
+* DATA driven: next gen sequencing revolutionizes biology
+	* creats a new problem--large datasets!!! how to make sense? 
+	* not data limited and potentially computationally limited   
+
+* Where is the field headed    
+	* Molecular Ecology Journal(flagship journal representative o the field)  
+		* ALL systems:  corals, protists, daphnia, coral, lemurs, dandelions, steve studies trees 
+		* model organism constraint disappearing!   
+	* What types of questions are asked?  
+		* How do genes correspond with circadian rythm?  
+		* How does the microbiome influence the organism? 
+		* How does epigenetic variation influence evolutionary responses? or contribute to phenotypic variation?  
+		* What are the patterns of genetic diversity that can give us insights on population dynamics?  
+		* What are constraints and tradeoffs and genetic mechanisms of traits? 
+
+* Methods?   
+	* De novo genome assembly; sequencing a DNA book from scratch!!    
+		* RNA-seq; transcriptomic profiling     
+	* 16 s metagenomic sequencing      
+	* Rad-seq/GBS for estiamting population structure and genetic diversity     
+
+* Proccesses studied?    
+	* All evo and eco stuff; speciation, hybridization, local adaptation, genetic basis of local adaptation, genetic architecture of complex phenotypes, genes controlling host-pathogen evolutionary dynamics, pop structure, gene flow, epigenetics     
+	
+* Goals of the course!    
+	1. Learn how ecology and genomes shape each other   
+	2. Think creatively about major questions, and pose testable hypotheses to those questions using appropriate genomic data    
+	3. Think about careful experimental design and statistical analysis---shown by reading papers   
+	4. Achive working knowledge and level of comfort for bioinformatics routines for ecological genomics studies   
+	
+### Melissa background	  
+
+**Background, what drove Melissa and Steve to ecological genomics?**       
+
+Melissa read a cool paper that scales from analyzing a few loci to the whole genome.   
+
+One figure popped out at her, FST (developed by Sewell Wright) histogram.   FST of 1= complete differentiation, FST of 0 = no diff. FST described as **Alleles in space**. From this histogram, Melissa was struck by how you can separate out neutral from selective ones.  
+
+Melissa has a data set with 96 sea stars and then the 16s microbiome. Would be cool to see if there is heritability in some bactera
+
+### Steve background   
+
+* Inspired by Yanis Antonivics (an **OG**)   
+* At the time, just so stories: **Adaptatationist programme**    
+	* Just go out and go by feeling in a natural history way and prescribe an adaptation story   
+	* Janis wrote a creed to quantify the operational relationship between traits, environment, and genetics     
+* Yanis was on Steve's committee and Steve was interested in adaptation with respect to invasion biology because organisms need to respond to novel environments     
+	* Phenotypes can relate to the environment, but what is the genetic basis of local adaptation (in situ)? There are other confounding issues: demographic effects, plasticity     
+* Steve thinks about environment-phenotype-genetics triangle. Basically a path diagram that feeds back on each other.    
+	* Relationship between genes and phenotype ---GWAS (Genome wide association study)    
+	* Relationship between genetics and environment --- Fst, clines between allele frequencies and environment    
+* Invasion history is tough because of demographic history    
+* He decided to focus on trees; large population size, straddle huge environmental gradients so the opportunity for selection is high   
+	* positive relationship between Growing season length and traits    
+	* Did a  reciprocal transplant of different populations to identify the extent of local adaptation in large established common gardens    
+	* SK does GBS (genotype by sequencing)      
+	* Problem with field: validating key gene candidates            
+  
+
+------
+<div id='id-section2'/>
+### Entry 2: 2017-01-23
+
+## Rubric for Info Update:
+* Outline   
+* ~20 min   
+* Learning/engaging activity   
+* Use board efficiently   
+* Take-home messages   
+* Examples from literature   
+
+###Melissa's Info Update: Next Generation Sequencing
+
+##1. Advances in Technology  
+Huge advances made in technology in the last decade (still moving quite fast)
+
+Contrast between Human Genome Project and current technology
+
+Human Genome Project:
+* done 2001-2003   
+* ABI-Sanger Sequencing   
+* 15 years   
+* 1 genome   
+* $3 billion   
+
+HiSeq XTen (Illumina):
+* 2014   
+* 1 day   
+* 45 whole human genomes   
+* S1000 each   
+
+##2. Range of Applications
+* WGS (Whole Genome Sequencing)   
+* RNA-seq   
+* ChIP-seq (Chromatin Immunoprecipitation sequencing)   
+* Targetted/Capture sequencing   
+
+##3. General Library Prep. Workflow   
+
+#Techniques depends on applications/goals
+
+where is genetic variation?   
+
+number of samples:
+* population   
+* individual   
+* comparative studies   
+* model organism or not (model organisms have reference genomes/transcriptomes etc)   
+
+demographic history
+
+adaptive genentic variation
+
+gene expression variation
+
+#Decisions based on what is needed:
+
+* Length of reads   
+* Number of reads   
+* Distribution of reads   
+
+Reduced rep.:
+* RNA (coding)-more reads for highly expressed regions   
+* GBS/RAD (near restriction sites)
+
+Extraction (DNA or RNA->cDNA), fragment sample, ligate adaptors (individual barcodes), add sequence adaptors, PCR
+
+##4. Sequence by Synthesis (SBS)
+
+Adapters are added to our DNA segments. DNA goes into a lane of flow cell. Adapters bind to oligo's and our DNA forms a bridge. A picture is taken every time a complementary labeled dNTP's is added.  
+
+90% of global data by Illumina
+
+Combining different methods help in assembling genomes of non-model organisms (de novo assembly)
+
+#Glossary 
+```
+short reads 50 bp   
+long reads 100 bp, 150 bp, 300 bp    
+longer reads 10000-60000 bp (SMRT)- faster but not as accurate, so not good for de novo assembly   
+```
+
+------
+<div id='id-section3'/>
+### Entry 3: 2017-01-25
+
+###Info Update: QTN
+
+##1. What are QTN's?
+Quantitative Trait Nucleotides
+E.g. of Quantitative Traits   
+*Flowering time (phenology)-continuous trait   
+*Flower color-discrete trait   
+*Thermal tolerance   
+*Venom potency   
+*Defense compounds   
+*Toxin tolerance   
+*Drought tolerance   
+*Altitude (hypoxia) tolerance   
+
+##2. Quantitative genetic theory of adaptive traits   
+V~A~ (additive genetic variance)   
+h^2^ (heritability)   
+
+Reminder h^2^=V~A~/V~P~, where V~P~ is phenotypic variance                 
+Since mutation can diminish or augment avg fitness, big change mutations tend to be extreme and not selected. More info with figures in notebook
+
+##3. Methods
+*Linkage mapping   
+*Genome-Wide Association Studies (GWAS)
+*Selection Scans
+
+
+
+
+------
+<div id='id-section4'/>
+### Entry 4: 2017-01-30
+
+##Project Info
+
+#Sea Stars Wasting Disease
+
+-Widespread   
+-Many species affected (resistance vary among species)   
+-Starts with loss of turgor pressure and/or lesions (holes)   
+-Progress into limbs being pulled off (when sea stars move or through gravity)   
+-*Pisaster* *ochraceus* (Alaska to Baja, CA). Orange or purple   
+-First reports of disease in 2012 (Isolated cases from 1970)
+-Densovirus implicated   
+-Present in 70 yo museum specimens    
+-Outbreaks in 1970's, 1980's but not as extreme as current outbreak
+-All individuals exposed
+-Disease seem to be more prevalent intertidally (warmer temperatures, more variable environment)   
+-Epidermal (host biopsy). Extracted RNA, got all mRNA (poly A-tail) using 5 Illumina hi-Seq 3000PE100 lanes to get gene expression data.   
+-16S rRNA amplified
+-Starfish collected and delivered within 24 hours of collection (all healthy at time)
+-Transmission might be environmental or through the gut
+
+#Update
+Densovirus seem to be missing from samples
+
+#Project ideas for each group in notebook and on Andrew's github (link to be added) 
+
+------
+<div id='id-section5'/>
+### Entry 5:
+
+------
+<div id='id-section6'/>
+### Entry 6:
+------
+<div id='id-section7'/>
+### Entry 7:
+------
+<div id='id-section8'/>
+### Entry 8:
+------
+<div id='id-section9'/>
+### Entry 9:
+------
+<div id='id-section10'/>
+### Entry 10:
+------
+<div id='id-section11'/>
+### Entry 11:
+------
+<div id='id-section12'/>
+### Entry 12:
+------
+<div id='id-section13'/>
+### Entry 13:
+------
+<div id='id-section14'/>
+### Entry 14:
+------
+<div id='id-section15'/>
+### Entry 15:
+------
+<div id='id-section16'/>
+### Entry 16:
+------
+<div id='id-section17'/>
+### Entry 17:
+------
+<div id='id-section18'/>
+### Entry 18:
+------
+<div id='id-section19'/>
+### Entry 19:
+------
+<div id='id-section20'/>
+### Entry 20:
+------
+<div id='id-section21'/>
+### Entry 21:
+------
+<div id='id-section22'/>
+### Entry 22:
+------
+<div id='id-section23'/>
+### Entry 23:
+------
+<div id='id-section24'/>
+### Entry 24:
+------
+<div id='id-section25'/>
+### Entry 25:
+------
+<div id='id-section26'/>
+### Entry 26:
+------
+<div id='id-section27'/>
+### Entry 27:
+------
+<div id='id-section28'/>
+### Entry 28:
+------
+<div id='id-section29'/>
+### Entry 29:
+------
+<div id='id-section30'/>
+### Entry 30: Code for HW3
+Code for minor allele frequency change (MAF=0.04)
+```
+# Set your working directory to where you downloaded your results files:
+#setwd("C:/Users/Muhammad/Desktop/Ecological Genomics/HW3/Minor Allele frequency changed")
+
+list.files() # Do you see your downloaded files there? If not, double check to make sure you've set your working directory to the right spot
+
+# We'll need to install 2 packages to work with the SNP data:
+#install.packages("vcfR") # reads in vcf files and proides tools for file conversion 
+#install.packages("adegenet") # pop-genetics package with some handy routines, including PCA and other multivariate methods (DAPC)
+
+# ...and load the libraries
+library(adegenet)
+library(vcfR)
+
+
+vcf1<-read.vcfR("SSW_all_biallelic.MAF0.04.Miss0.8.recode.vcf")
+#vcf1 <- read.vcfR("SSW_all_biallelic.MAF0.04.Miss0.8.recode.vcf")
+
+# The adegenet package uses a highly efficient way of storing large SNP datasets in R called a "genlight" object. The following function creates a genlight object from your vcf:
+gl1 <- vcfR2genlight(vcf1)
+print(gl1) # Looks good! Right # of SNPs and individuals!
+
+# For info, try:
+gl1$ind.names
+gl1$loc.names[1:10]
+
+# Notice there's nothing in the field that says "pop"? Let's fix that...
+ssw_meta <- read.table("ssw_healthloc.txt", header=T) # read in the metadata
+ssw_meta <- ssw_meta[order(ssw_meta$Individual),] # sort it by Individual ID
+
+# Confirm the ID's are ordered the same in gl1 and ssw_meta:
+gl1$ind.names
+ssw_meta$Individual
+
+gl1$pop <- ssw_meta$Location # assign locality info
+gl1$other <- as.list(ssw_meta$Trajectory) # assign disease status
+
+
+# WE can explore the structure of our SNP data using the glPlot function, which gives us a sample x SNP view of the VCF file
+glPlot(gl1, posi="bottomleft")
+
+# Now, let's compute the PCA on the SNP genotypes and plot it:
+pca1 <- glPca(gl1, nf=4, parallel = F) # nf = number of PC axes to retain (here, 4)
+pca1 # prints summary
+
+# Plot the individuals in SNP-PCA space, with locality labels:
+plot(pca1$scores[,1], pca1$scores[,2], 
+     cex=2, pch=20, col=gl1$pop, 
+     xlab="Principal Component 1", 
+     ylab="Principal Component 2", 
+     main="PCA on SSW data (Freq missing=20%; 2493 SNPs)")
+legend("topleft", 
+       legend=unique(gl1$pop), 
+       pch=20, 
+       col=c("black", "red"))
+
+# Perhaps we want to show disease status instead of locality:
+plot(pca1$scores[,1], pca1$scores[,2], 
+     cex=2, pch=20, col=as.factor(unlist(gl1$other)), 
+     xlab="Principal Component 1", 
+     ylab="Principal Component 2", 
+     main="PCA on SSW data (Freq missing=20%; 2493 SNPs)")
+legend("topleft", 
+       legend=unique(as.factor(unlist(gl1$other))), 
+       pch=20, 
+       col=as.factor(unique(unlist(gl1$other))))
+
+# Which SNPs load most strongly on the 1st PC axis?
+loadingplot(abs(pca1$loadings[,1]),
+            threshold=quantile(abs(pca1$loadings), 0.999))
+# Get their locus names
+gl1$loc.names[which(quantile(abs(pca1$loadings))>0.999)]
+
+threshold<-quantile(abs(pca1$loadings),0.999)
+
+gl1$loc.names[which(abs(pca1$loadings)>threshold)]
+
+gl1$loc.names[which(quantile(abs(pca1$loadings),0.999)>0.0770)]
+```
+
+Code for change in max missing (missing 1.0)
+```
+setwd("C:/Users/Muhammad/Desktop/Ecological Genomics/HW3/Site missing")
+
+list.files() # Do you see your downloaded files there? If not, double check to make sure you've set your working directory to the right spot
+
+# We'll need to install 2 packages to work with the SNP data:
+#install.packages("vcfR") # reads in vcf files and proides tools for file conversion 
+#install.packages("adegenet") # pop-genetics package with some handy routines, including PCA and other multivariate methods (DAPC)
+
+# ...and load the libraries
+library(adegenet)
+library(vcfR)
+
+
+
+vcf1<-read.vcfR("SSW_all_biallelic.MAF0.02.Miss1.0.recode.vcf")
+#vcf1 <- read.vcfR("SSW_all_biallelic.MAF0.02.Miss1.0.recode.vcf")
+
+# The adegenet package uses a highly efficient way of storing large SNP datasets in R called a "genlight" object. The following function creates a genlight object from your vcf:
+gl1 <- vcfR2genlight(vcf1)
+print(gl1) # Looks good! Right # of SNPs and individuals!
+
+# For info, try:
+gl1$ind.names
+gl1$loc.names[1:10]
+
+# Notice there's nothing in the field that says "pop"? Let's fix that...
+ssw_meta <- read.table("ssw_healthloc.txt", header=T) # read in the metadata
+ssw_meta <- ssw_meta[order(ssw_meta$Individual),] # sort it by Individual ID
+
+# Confirm the ID's are ordered the same in gl1 and ssw_meta:
+gl1$ind.names
+ssw_meta$Individual
+
+gl1$pop <- ssw_meta$Location # assign locality info
+gl1$other <- as.list(ssw_meta$Trajectory) # assign disease status
+
+
+# WE can explore the structure of our SNP data using the glPlot function, which gives us a sample x SNP view of the VCF file
+glPlot(gl1, posi="bottomleft")
+
+# Now, let's compute the PCA on the SNP genotypes and plot it:
+pca1 <- glPca(gl1, nf=4, parallel = F) # nf = number of PC axes to retain (here, 4)
+pca1 # prints summary
+
+# Plot the individuals in SNP-PCA space, with locality labels:
+plot(pca1$scores[,1], pca1$scores[,2], 
+     cex=2, pch=20, col=gl1$pop, 
+     xlab="Principal Component 1", 
+     ylab="Principal Component 2", 
+     main="PCA on SSW data (Freq missing=0%; 1494 SNPs)")
+legend("topleft", 
+       legend=unique(gl1$pop), 
+       pch=20, 
+       col=c("black", "red"))
+
+# Perhaps we want to show disease status instead of locality:
+plot(pca1$scores[,1], pca1$scores[,2], 
+     cex=2, pch=20, col=as.factor(unlist(gl1$other)), 
+     xlab="Principal Component 1", 
+     ylab="Principal Component 2", 
+     main="PCA on SSW data (Freq missing=0%; 1494 SNPs)")
+legend("topleft", 
+       legend=unique(as.factor(unlist(gl1$other))), 
+       pch=20, 
+       col=as.factor(unique(unlist(gl1$other))))
+
+# Which SNPs load most strongly on the 1st PC axis?
+loadingplot(abs(pca1$loadings[,1]),
+            threshold=quantile(abs(pca1$loadings), 0.999))
+# Get their locus names
+gl1$loc.names[which(quantile(abs(pca1$loadings))>0.999)]
+
+threshold<-quantile(abs(pca1$loadings),0.999)
+
+gl1$loc.names[which(abs(pca1$loadings)>threshold)]
+
+gl1$loc.names[which(quantile(abs(pca1$loadings),0.999)>0.0770)]
+```
+------
+<div id='id-section31'/>
+### Entry 31:
+------
+<div id='id-section32'/>
+### Entry 32:
+------
+<div id='id-section33'/>
+### Entry 33:
+------
+<div id='id-section34'/>
+### Entry 34:
+------
+<div id='id-section35'/>
+### Entry 35:
+------
+<div id='id-section36'/>
+### Entry 36:
+------
+<div id='id-section37'/>
+### Entry 37:
+------
+<div id='id-section38'/>
+### Entry 38:
+------
+<div id='id-section39'/>
+### Entry 39:
+------
+<div id='id-section40'/>
+### Entry 40:
+------
+<div id='id-section41'/>
+### Entry 41:
+------
+<div id='id-section42'/>
+### Entry 42:
+------
+<div id='id-section43'/>
+### Entry 43:
+------
+<div id='id-section44'/>
+### Entry 44:
+------
+<div id='id-section45'/>
+### Entry 45:
+------
+<div id='id-section46'/>
+### Entry 46:
+------
+<div id='id-section47'/>
+### Entry 47:
+------
+<div id='id-section48'/>
+### Entry 48:
+------
+<div id='id-section49'/>
+### Entry 49:
+------
+<div id='id-section50'/>
+### Entry 50:
+------
+<div id='id-section51'/>
+### Entry 51:
+------
+<div id='id-section52'/>
+### Entry 52:
+------
+<div id='id-section53'/>
+### Entry 53:
+------
+<div id='id-section54'/>
+### Entry 54:
+------
+<div id='id-section55'/>
+### Entry 55:
+------
+<div id='id-section56'/>
+### Entry 56:
+------
+<div id='id-section57'/>
+### Entry 57:
+------
+<div id='id-section58'/>
+### Entry 58:
+------
+<div id='id-section59'/>
+### Entry 59:
+------
+<div id='id-section60'/>
+### Entry 60:
+
+------
