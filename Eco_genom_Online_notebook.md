@@ -1,15 +1,15 @@
 # Project title    
 
-### Author: ANTdrew D. Nguyen     
+### Author: Muhammad kala     
 ### Ecological Genomics:   
 
 ## Overall Description of notebook      
 
-fill in your description here!
+Notebook for the Ecological Genomics Class. I still prefer my physical notebook :(
 
 
-## Date started: (year-month-day)   
-## Date end:   (year-month-day)    
+## Date started: (2017-01-18)   
+## Date end:   (2017-month-day)    
 
 ## Philosophy   
 Science should be reproducible and one of the best ways to achieve this is by logging research activities in a notebook. Because science/biology has increasingly become computational, it is easier to document computational projects in an electronic form, which can be shared online through Github.    
