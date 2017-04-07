@@ -385,8 +385,10 @@ In progress
 ### Entry 28:
 ------
 <div id='id-section29'/>
-### Entry 29: Code for HW2   
+### Entry 29: Code for HW2 
+
 ## Code for intertidal
+
 ```
 data=which(colData[,5]=="int")
 A=colData[data,]
@@ -432,8 +434,10 @@ p
 p <- ggplot(d, aes(x=score, y=count, color=health, group=health)) 
 p <- p +  geom_point() + stat_smooth(se=FALSE,method="loess") +  scale_y_log10()
 p
-```   
+```
+
 ## Code for Subtidal   
+
 ```
 data=which(colData[,5]=="sub")
 C=colData[data,]
