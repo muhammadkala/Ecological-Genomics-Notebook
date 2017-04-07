@@ -60,7 +60,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Entry 26:](#id-section26).
 * [Entry 27:](#id-section27).
 * [Entry 28:](#id-section28).
-* [Entry 29:](#id-section29).
+* [Entry 29: Code for HW2](#id-section29).
 * [Entry 30: Code for HW3](#id-section30).
 * [Entry 31:](#id-section31).
 * [Entry 32:](#id-section32).
