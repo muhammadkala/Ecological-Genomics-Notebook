@@ -385,12 +385,148 @@ In progress
 ### Entry 28:
 ------
 <div id='id-section29'/>
-### Entry 29:
+### Entry 29: Code for HW2   
+## Code for intertidal
+```
+data=which(colData[,5]=="int")
+A=colData[data,]
+B=(countData[,1:48])
+dim(colData)
+dim(A)
+dim(colData)
+dim(B)
+
+#model code
+dds <- DESeqDataSetFromMatrix(countData = B, colData = A, design = ~ + health)
+dim(dds)
+dds <- dds[ rowSums(counts(dds)) > 100, ]
+dim(dds)
+dds <- dds[sample(nrow(dds)), ]
+dim(dds)
+colData(dds)$health <- factor(colData(dds)$health, levels=c("H","S")) #sets that "healthy is the reference
+dds <- DESeq(dds) 
+res <- results(dds)
+res <- res[order(res$padj),]
+head(res)
+
+
+summary(res)
+plotMA(res, main="DESeq2", ylim=c(-3,3))
+
+
+## Check out one of the genes to see if it's behaving as expected....I put the most significantly differentially expressed gene in these parts
+d <- plotCounts(dds, gene="TRINITY_DN43080_c1_g1_TRINITY_DN43080_c1_g1_i3_g.14110_m.14110", intgroup=(c("health","day","location")), returnData=TRUE)
+d
+p <- ggplot(d, aes(x= health, y=count, shape = location)) + theme_minimal() + theme(text = element_text(size=20), panel.grid.major = element_line(colour = "grey"))
+p <- p + geom_point(position=position_jitter(w=0.3,h=0), size = 3) + ylim(0,3000)
+p
+
+
+## Check out one of the genes to see interaction between score, health and expression....
+d <- plotCounts(dds, gene="TRINITY_DN43080_c1_g1_TRINITY_DN43080_c1_g1_i3_g.14110_m.14110", intgroup=(c("health","score","location")), returnData=TRUE)
+d
+p <- ggplot(d, aes(x= score, y=count, shape = health, color = location)) + theme_minimal() + theme(text = element_text(size=20), panel.grid.major = element_line(colour = "grey"))
+p <- p + geom_point(position=position_jitter(w=0.3,h=0), size = 3) 
+p
+
+p <- ggplot(d, aes(x=score, y=count, color=health, group=health)) 
+p <- p +  geom_point() + stat_smooth(se=FALSE,method="loess") +  scale_y_log10()
+p
+```   
+## Code for Subtidal   
+```
+data=which(colData[,5]=="sub")
+C=colData[data,]
+D=(countData[,49:77])
+dim(colData)
+dim(C)
+dim(colData)
+dim(D)
+
+#model code
+dds <- DESeqDataSetFromMatrix(countData = D, colData = C, design = ~ + health)
+dim(dds)
+dds <- dds[ rowSums(counts(dds)) > 100, ]
+dim(dds)
+dds <- dds[sample(nrow(dds)), ]
+dim(dds)
+colData(dds)$health <- factor(colData(dds)$health, levels=c("H","S")) #sets that "healthy is the reference
+dds <- DESeq(dds) 
+res <- results(dds)
+res <- res[order(res$padj),]
+head(res)
+
+summary(res)
+plotMA(res, main="DESeq2", ylim=c(-7,7))
+
+## Check out one of the genes to see if it's behaving as expected....I put the most significantly differentially expressed gene in these parts
+d <- plotCounts(dds, gene="TRINITY_DN42073_c0_g1_TRINITY_DN42073_c0_g1_i1_g.12173_m.12173", intgroup=(c("health","day","location")), returnData=TRUE)
+d
+p <- ggplot(d, aes(x= health, y=count, shape = location)) + theme_minimal() + theme(text = element_text(size=20), panel.grid.major = element_line(colour = "grey"))
+p <- p + geom_point(position=position_jitter(w=0.3,h=0), size = 3) + ylim(0,200)
+p
+
+
+## Check out one of the genes to see interaction between score, health and expression....
+d <- plotCounts(dds, gene="TRINITY_DN42073_c0_g1_TRINITY_DN42073_c0_g1_i1_g.12173_m.12173", intgroup=(c("health","score","location")), returnData=TRUE)
+d
+p <- ggplot(d, aes(x= score, y=count, shape = health, color = location)) + theme_minimal() + theme(text = element_text(size=20), panel.grid.major = element_line(colour = "grey"))
+p <- p + geom_point(position=position_jitter(w=0.3,h=0), size = 3) 
+p
+
+p <- ggplot(d, aes(x=score, y=count, color=health, group=health)) 
+p <- p +  geom_point() + stat_smooth(se=FALSE,method="loess") +  scale_y_log10()
+p
+
+#Code for both intertidal and subtidal (w/out interaction)
+
+E=(colData) 
+dim(E)
+G=(countData)
+dim(G)
+
+#model code
+dds <- DESeqDataSetFromMatrix(countData = G, colData = E, design = ~ location + health)
+dim(dds)
+dds <- dds[ rowSums(counts(dds)) > 100, ]
+dim(dds)
+dds <- dds[sample(nrow(dds)), ]
+dim(dds)
+colData(dds)$health <- factor(colData(dds)$health, levels=c("H","S")) #sets that "healthy is the reference
+dds <- DESeq(dds) 
+res <- results(dds)
+res <- res[order(res$padj),]
+sigres <-res[res$padj>0.05,]
+head(res)
+
+summary(res)
+
+plotMA(res, main="DESeq2", ylim=c(-4,4))
+
+## Check out one of the genes to see if it's behaving as expected....I put the most significantly differentially expressed gene in these parts
+d <- plotCounts(dds, gene="TRINITY_DN43080_c1_g1_TRINITY_DN43080_c1_g1_i3_g.14110_m.14110", intgroup=(c("health","day","location")), returnData=TRUE)
+d
+p <- ggplot(d, aes(x= health, y=count, shape = location)) + theme_minimal() + theme(text = element_text(size=20), panel.grid.major = element_line(colour = "grey"))
+p <- p + geom_point(position=position_jitter(w=0.3,h=0), size = 3) + ylim(0,2000)
+p
+
+
+## Check out one of the genes to see interaction between score, health and expression....
+d <- plotCounts(dds, gene="TRINITY_DN43080_c1_g1_TRINITY_DN43080_c1_g1_i3_g.14110_m.14110", intgroup=(c("health","score","location")), returnData=TRUE)
+d
+p <- ggplot(d, aes(x= score, y=count, shape = health, color = location)) + theme_minimal() + theme(text = element_text(size=20), panel.grid.major = element_line(colour = "grey"))
+p <- p + geom_point(position=position_jitter(w=0.3,h=0), size = 3) 
+p
+
+p <- ggplot(d, aes(x=score, y=count, color=health, group=health)) 
+p <- p +  geom_point() + stat_smooth(se=FALSE,method="loess") +  scale_y_log10()
+p
+```
 ------
 <div id='id-section30'/>
-### Entry 30: Code for HW3
-## Code for minor allele frequency change (MAF=0.04)
+### Entry 30: Code for HW3   
 
+## Code for minor allele frequency change (MAF=0.04)   
 ```
 # Set your working directory to where you downloaded your results files:
 #setwd("C:/Users/Muhammad/Desktop/Ecological Genomics/HW3/Minor Allele frequency changed")
