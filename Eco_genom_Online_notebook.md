@@ -202,7 +202,7 @@ HiSeq XTen (Illumina):
 
 ## 3. General Library Prep. Workflow   
 
-# Techniques depends on applications/goals
+#### Techniques depends on applications/goals
 
 where is genetic variation?   
 
@@ -218,7 +218,7 @@ adaptive genentic variation
 
 gene expression variation
 
-# Decisions based on what is needed:
+#### Decisions based on what is needed:
 
 * Length of reads   
 * Number of reads   
@@ -238,7 +238,7 @@ Adapters are added to our DNA segments. DNA goes into a lane of flow cell. Adapt
 
 Combining different methods help in assembling genomes of non-model organisms (de novo assembly)
 
-# Glossary 
+## Glossary 
 ```
 short reads 50 bp   
 long reads 100 bp, 150 bp, 300 bp    
@@ -249,7 +249,7 @@ longer reads 10000-60000 bp (SMRT)- faster but not as accurate, so not good for 
 <div id='id-section3'/>
 ### Entry 3: 2017-01-25
 
-### Info Update: QTN
+## Info Update: QTN
 
 ## 1. What are QTN's?
 Quantitative Trait Nucleotides
@@ -284,7 +284,7 @@ Since mutation can diminish or augment avg fitness, big change mutations tend to
 
 ## Project Info
 
-# Sea Stars Wasting Disease
+## Sea Stars Wasting Disease
 
 -Widespread   
 -Many species affected (resistance vary among species)   
@@ -302,24 +302,27 @@ Since mutation can diminish or augment avg fitness, big change mutations tend to
 -Starfish collected and delivered within 24 hours of collection (all healthy at time)
 -Transmission might be environmental or through the gut
 
-# Update
+## Update
 Densovirus seem to be missing from samples
 
-# Project ideas for each group in notebook and on Andrew's github (link to be added) 
+## Project ideas for each group in notebook and on Andrew's github (link to be added) 
 
 ------
 <div id='id-section5'/>
 ### Entry 5:
-
+In progress
 ------
 <div id='id-section6'/>
 ### Entry 6:
+In progress
 ------
 <div id='id-section7'/>
 ### Entry 7:
+In progress
 ------
 <div id='id-section8'/>
 ### Entry 8:
+In progress
 ------
 <div id='id-section9'/>
 ### Entry 9:
@@ -386,7 +389,8 @@ Densovirus seem to be missing from samples
 ------
 <div id='id-section30'/>
 ### Entry 30: Code for HW3
-# Code for minor allele frequency change (MAF=0.04)
+## Code for minor allele frequency change (MAF=0.04)
+
 ```
 # Set your working directory to where you downloaded your results files:
 #setwd("C:/Users/Muhammad/Desktop/Ecological Genomics/HW3/Minor Allele frequency changed")
@@ -467,7 +471,7 @@ gl1$loc.names[which(abs(pca1$loadings)>threshold)]
 gl1$loc.names[which(quantile(abs(pca1$loadings),0.999)>0.0770)]
 ```
 
-# Code for change in max missing (missing 1.0)
+## Code for change in max missing (missing 1.0)
 ```
 setwd("C:/Users/Muhammad/Desktop/Ecological Genomics/HW3/Site missing")
 
