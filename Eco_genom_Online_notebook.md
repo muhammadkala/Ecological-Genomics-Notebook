@@ -302,10 +302,13 @@ Since mutation can diminish or augment avg fitness, big change mutations tend to
 - Starfish collected and delivered within 24 hours of collection (all healthy at time)
 - Transmission might be environmental or through the gut
 
+
 ## Update
 Densovirus seem to be missing from samples
 
 ## Project ideas for each group in notebook and on [Andrew's github] (https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md#id-section4) 
+
+Kirsten and I have chosen to look at SNPs to see if allelic differences might be accounting for resistance to disease, and maybe look at microbiome as well.
 
 ------
 <div id='id-section5'/>
@@ -321,13 +324,13 @@ Densovirus seem to be missing from samples
 Benefits 
 * Higher power + resolution   
 * New possible research areas: screening for variation, adaptive potential of population e.g.   
-- QTL/Association mapping    
-- pinpoint loci of adaptations     
-- impact of genetic variation   
-- patterns of gene expression   
-- plastic response to environmental changes   
-- use of ancient material   
-- environmental samples
+-QTL/Association mapping    
+-pinpoint loci of adaptations     
+-impact of genetic variation   
+-patterns of gene expression   
+-plastic response to environmental changes   
+-use of ancient material   
+-environmental samples
 
 ### 2. Planning stage
 
@@ -348,32 +351,74 @@ Limitations (Usually one individual sequenced):
 
 Prior Considerations
 - seq platform: 
-* Short: Illumina Hi-seq (150bp) and SOLID (50bp)    
-* Longer: Pacific Biosciences (5Kb), Ion torrent (~500bp), Illumina Molecule (up to 10KB)
-* Hybrids (studies typically use more than one i.e. both short and long reads for scaffolding)
+-Short: Illumina Hi-seq (150bp) and SOLID (50bp)    
+-Longer: Pacific Biosciences (5Kb), Ion torrent (~500bp), Illumina Molecule (up to 10KB)
+-Hybrids (studies typically use more than one i.e. both short and long reads for scaffolding)
 
 - Knowledge on organism
-* Genome size
-* Seq error rates
-* Repeat content 
-* Degree of genome duplications
+-Genome size
+-Seq error rates
+-Repeat content 
+-Degree of genome duplications
 Recommended pilot short-insert seq
 
 ### 3. Methods
 
 Wet lab procedures 
 * Individual    
-- heterozygous position have adverse effects on assembly    
-- highly polypoid are challenging (special pipelines)    
-use of inbred individuals, parthenogenic or genocentric offspring   
-- Have metadata, age, sex, location
+-Heterozygous position have adverse effects on assembly    
+-Highly polypoid are challenging (special pipelines); use of inbred individuals, parthenogenic or genocentric offspring       
+-Have metadata, age, sex, location
 
 * Tissue   
-- Avoid energetically active tissue such as muslce (increase in mitochondrial DNA because increase in read depth)
-- Avoid gut+skin (non target DNA)    
+-Avoid energetically active tissue such as muslce (increase in mitochondrial DNA because increase in read depth)
+-Avoid gut+skin (non target DNA)    
 
 * DNA
+-High quality, non degradable  
+-Check with high resolution gel   
 
+* Library Preparation   
+I. Use single reads/remove duplicated reads
+II. Insert sizes within 0.2-40 kb range (>20 kb for scaffold)
+III. Read orientation:
+-Inwards (paired-end)   
+-Outwards (outward)   
+Mis orientation can happen/ could be chimeric segment from non adjascent DNA
+
+### 4. Genome assembly
+
+Storage
+Server 
+Expertise
+
+Pipeline applicable to non models
+
+* Pre Assembly 
+-Quality
+-GC content
+-Repeat abundance
+-Proportion of duplicate read
+-Seq for calibration must be removed (Illumina)
+
+* De novo
+
+-Algorithms (minimize misassembly and improve contiguity)
+-OLC (Overlap-Layout-Consensus)
+-Extension-based   
+-Hybrid approaches
+
+## Info update: RNA-seq
+
+### 1. Advantages:
+- Differential gene expression: in tissues there is variation
+- Allele specific expression: environmental response of adaptation
+- Functional relevant subset of the genome
+
+RNA seq | Microarray
+wide range expression| X
+X|Saturation of analog type fluorescent signal
+info on splicing events| X
 ------
 <div id='id-section6'/>
 ### Entry 6:
