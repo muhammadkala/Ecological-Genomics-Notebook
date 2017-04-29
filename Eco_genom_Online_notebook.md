@@ -272,8 +272,8 @@ Since mutation can diminish or augment avg fitness, big change mutations tend to
 
 ## 3. Methods
 -Linkage mapping      
--Genome-Wide Association Studies (GWAS)   
--Selection Scans   
+-Genome-Wide Association Studies (GWAS)     
+-Selection Scans     
 
 
 
@@ -351,17 +351,17 @@ Limitations (Usually one individual sequenced):
 
 Prior Considerations
 - seq platform: 
--Short: Illumina Hi-seq (150bp) and SOLID (50bp)    
--Longer: Pacific Biosciences (5Kb), Ion torrent (~500bp), Illumina Molecule (up to 10KB)
--Hybrids (studies typically use more than one i.e. both short and long reads for scaffolding)
+-Short: Illumina Hi-seq (150bp) and SOLID (50bp)      
+-Longer: Pacific Biosciences (5Kb), Ion torrent (~500bp), Illumina Molecule (up to 10KB)   
+-Hybrids (studies typically use more than one i.e. both short and long reads for scaffolding)    
 
 - Knowledge on organism
--Genome size
--Seq error rates
--Repeat content 
--Degree of genome duplications
-Recommended pilot short-insert seq
-
+-Genome size    
+-Seq error rates   
+-Repeat content    
+-Degree of genome duplications   
+Recommended pilot short-insert seq     
+ 
 ### 3. Methods
 
 Wet lab procedures 
@@ -370,127 +370,127 @@ Wet lab procedures
 -Highly polypoid are challenging (special pipelines); use of inbred individuals, parthenogenic or genocentric offspring       
 -Have metadata, age, sex, location
 
-* Tissue   
--Avoid energetically active tissue such as muslce (increase in mitochondrial DNA because increase in read depth)
--Avoid gut+skin (non target DNA)    
+* Tissue     
+-Avoid energetically active tissue such as muslce (increase in mitochondrial DNA because increase in read depth)  
+-Avoid gut+skin (non target DNA)       
 
 * DNA
--High quality, non degradable  
--Check with high resolution gel   
+-High quality, non degradable    
+-Check with high resolution gel     
 
 * Library Preparation   
-I. Use single reads/remove duplicated reads
-II. Insert sizes within 0.2-40 kb range (>20 kb for scaffold)
-III. Read orientation:
--Inwards (paired-end)   
--Outwards (outward)   
-Mis orientation can happen/ could be chimeric segment from non adjascent DNA
+I. Use single reads/remove duplicated reads   
+II. Insert sizes within 0.2-40 kb range (>20 kb for scaffold)    
+III. Read orientation:    
+-Inwards (paired-end)      
+-Outwards (outward)       
+Mis orientation can happen/ could be chimeric segment from non adjascent DNA     
 
 ### 4. Genome assembly
 
-Storage
-Server 
-Expertise
+Storage   
+Server    
+Expertise    
 
-Pipeline applicable to non models
+Pipeline applicable to non models    
 
 * Pre Assembly 
--Quality
--GC content
--Repeat abundance
--Proportion of duplicate read
--Seq for calibration must be removed (Illumina)
+-Quality    
+-GC content    
+-Repeat abundance    
+-Proportion of duplicate read     
+-Seq for calibration must be removed (Illumina)    
 
 * De novo
-
--Algorithms (minimize misassembly and improve contiguity)
--OLC (Overlap-Layout-Consensus)
--Extension-based   
--Hybrid approaches
+  
+-Algorithms (minimize misassembly and improve contiguity)   
+-OLC (Overlap-Layout-Consensus)    
+-Extension-based     
+-Hybrid approaches    
 
 ## Info update: RNA-seq
 
 ### 1. Advantages:
-- Differential gene expression: in tissues there is variation
-- Allele specific expression: environmental response of adaptation
-- Functional relevant subset of the genome
+- Differential gene expression: in tissues there is variation    
+- Allele specific expression: environmental response of adaptation      
+- Functional relevant subset of the genome      
 
 
-RNA seq better than microarray in wide range expression, info on splicing events
+RNA seq better than microarray in wide range expression, info on splicing events     
 
 ### 2. Limitations
 
-- Does not give abundance of protein or other post-translational modification of proteins (and function)
+- Does not give abundance of protein or other post-translational modification of proteins (and function)   
 
 ### 3. Workflow
 
-Exp setup -> Tissue prep + library -> High throughput seq -> Transcriptome reconstruction -> Alignment of reads -> Read Qualification/Marker development -> Biological Influence
+Exp setup -> Tissue prep + library -> High throughput seq -> Transcriptome reconstruction -> Alignment of reads -> Read Qualification/Marker development -> Biological Influence     
 
 - Setup 
--Coding or regulatory   
--Is there a reference genome?   
--Alternative splicing?   
--Technology?   
--Population or specific treatments   
+-Coding or regulatory      
+-Is there a reference genome?     
+-Alternative splicing?     
+-Technology?     
+-Population or specific treatments     
 
 - Tissue prep
-Small organisms-many tissues pulled
--Sample should be in RNase free environment
--DNase treatment
--get rid of rRNAs
-Figures in physical textbook.
+Small organisms-many tissues pulled    
+-Sample should be in RNase free environment    
+-DNase treatment    
+-get rid of rRNAs      
+Figures in physical textbook.     
 
 - Library
--Single end
--Paired end
+-Single end     
+-Paired end      
 
 - High throughput seq
-Choose platform:
--Pyrosequencing by Roche (some incorrect polymer)
--Ion torrent
--GA/Hi-seq Illumina
+Choose platform:     
+-Pyrosequencing by Roche (some incorrect polymer)     
+-Ion torrent      
+-GA/Hi-seq Illumina     
 
 - Reconstruction 
-Figures in physical textbook.
+Figures in physical textbook.     
 
 ## Info Update: Amplicon seq
 
-Targetted approach for analyzing genetic variation in specific genomic region
+Targetted approach for analyzing genetic variation in specific genomic region     
 
-Amplicon is a targeted gene (region) to be amplified via PCR w/ specific primers
+Amplicon is a targeted gene (region) to be amplified via PCR w/ specific primers     
 
 - Library Prep
 
-Extract -> 1st PCR (amplify gene w/ primers) -> gel -> 2nd PCR w/ barcodes and adaptors (or directly to Seq. Facility) -> clean -> pool -> Seq facility   
+Extract -> 1st PCR (amplify gene w/ primers) -> gel -> 2nd PCR w/ barcodes and adaptors (or directly to Seq. Facility) -> clean -> pool -> Seq facility     
 
-454 replaced by Mi-Seq platform from Illumina
+454 replaced by Mi-Seq platform from Illumina  
 
-Trim adaptors
-Align
+Trim adaptors      
+Align    
 
 - Limitation
-Time consuming to manually correct some sequencing mistakes
+Time consuming to manually correct some sequencing mistakes  
 
 - Advantages
-Save time and money
+Save time and money    
 
 ## Info Update: GBS RAD-seq
 
-GBS: Genotyping by sequencing 
-RAD: Restriction assisted DNA sequencing (using restriction enzymes)
+GBS: Genotyping by sequencing    
+RAD: Restriction assisted DNA sequencing (using restriction enzymes)     
 
-GBS RAD-seq is between RNA-seq and Amplicon in terms of completeness of data and sampling 
+GBS RAD-seq is between RNA-seq and Amplicon in terms of completeness of data and sampling     
 
--lot of individuals
--lots of SNPs across genomes
--don't care about specific genes
-Useful for population genetics (population genetic diversity of one species)
+-lot of individuals     
+-lots of SNPs across genomes     
+-don't care about specific genes     
+Useful for population genetics (population genetic diversity of one species)     
 
 - Library Prep
 
-Restriction enzymes -> Barcodes + Adaptors -> PCR -> sequence  
+Restriction enzymes -> Barcodes + Adaptors -> PCR -> sequence    
 
-More info and drawings in notebook.    
+More info and drawings in notebook.      
 
 ------
 <div id='id-section6'/>
