@@ -305,7 +305,7 @@ Since mutation can diminish or augment avg fitness, big change mutations tend to
 ## Update
 Densovirus seem to be missing from samples
 
-## Project ideas for each group in notebook and on Andrew's github (link to be added) 
+## Project ideas for each group in notebook and on [Andrew's github] (https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md#id-section4) 
 
 ------
 <div id='id-section5'/>
@@ -361,7 +361,18 @@ Recommended pilot short-insert seq
 
 ### 3. Methods
 
-- Wet lab procedures 
+Wet lab procedures 
+* Individual    
+- heterozygous position have adverse effects on assembly    
+- highly polypoid are challenging (special pipelines)    
+use of inbred individuals, parthenogenic or genocentric offspring   
+- Have metadata, age, sex, location
+
+* Tissue   
+- Avoid energetically active tissue such as muslce (increase in mitochondrial DNA because increase in read depth)
+- Avoid gut+skin (non target DNA)    
+
+* DNA
 
 ------
 <div id='id-section6'/>
