@@ -254,14 +254,14 @@ longer reads 10000-60000 bp (SMRT)- faster but not as accurate, so not good for 
 ## 1. What are QTN's?
 Quantitative Trait Nucleotides
 E.g. of Quantitative Traits   
-*Flowering time (phenology)-continuous trait   
-*Flower color-discrete trait   
-*Thermal tolerance   
-*Venom potency   
-*Defense compounds   
-*Toxin tolerance   
-*Drought tolerance   
-*Altitude (hypoxia) tolerance   
+-Flowering time (phenology)-continuous trait        
+-Flower color-discrete trait       
+-Thermal tolerance       
+-Venom potency   
+-Defense compounds   
+-Toxin tolerance   
+-Drought tolerance        
+-Altitude (hypoxia) tolerance   
 
 ## 2. Quantitative genetic theory of adaptive traits   
 V~A~ (additive genetic variance)   
@@ -271,9 +271,9 @@ Reminder h^2^=V~A~/V~P~, where V~P~ is phenotypic variance
 Since mutation can diminish or augment avg fitness, big change mutations tend to be extreme and not selected. More info with figures in notebook
 
 ## 3. Methods
-*Linkage mapping   
-*Genome-Wide Association Studies (GWAS)
-*Selection Scans
+-Linkage mapping      
+-Genome-Wide Association Studies (GWAS)   
+-Selection Scans   
 
 
 
@@ -286,21 +286,21 @@ Since mutation can diminish or augment avg fitness, big change mutations tend to
 
 ## Sea Stars Wasting Disease
 
--Widespread   
--Many species affected (resistance vary among species)   
--Starts with loss of turgor pressure and/or lesions (holes)   
--Progress into limbs being pulled off (when sea stars move or through gravity)   
--*Pisaster* *ochraceus* (Alaska to Baja, CA). Orange or purple   
--First reports of disease in 2012 (Isolated cases from 1970)
--Densovirus implicated   
--Present in 70 yo museum specimens    
--Outbreaks in 1970's, 1980's but not as extreme as current outbreak
--All individuals exposed
--Disease seem to be more prevalent intertidally (warmer temperatures, more variable environment)   
--Epidermal (host biopsy). Extracted RNA, got all mRNA (poly A-tail) using 5 Illumina hi-Seq 3000PE100 lanes to get gene expression data.   
--16S rRNA amplified
--Starfish collected and delivered within 24 hours of collection (all healthy at time)
--Transmission might be environmental or through the gut
+- Widespread   
+- Many species affected (resistance vary among species)   
+- Starts with loss of turgor pressure and/or lesions (holes)   
+- Progress into limbs being pulled off (when sea stars move or through gravity)   
+- *Pisaster* *ochraceus* (Alaska to Baja, CA). Orange or purple   
+- First reports of disease in 2012 (Isolated cases from 1970)
+- Densovirus implicated   
+- Present in 70 yo museum specimens    
+- Outbreaks in 1970's, 1980's but not as extreme as current outbreak
+- All individuals exposed
+- Disease seem to be more prevalent intertidally (warmer temperatures, more variable environment)   
+- Epidermal (host biopsy). Extracted RNA, got all mRNA (poly A-tail) using 5 Illumina hi-Seq 3000PE100 lanes to get gene expression data.   
+- 16S rRNA amplified
+- Starfish collected and delivered within 24 hours of collection (all healthy at time)
+- Transmission might be environmental or through the gut
 
 ## Update
 Densovirus seem to be missing from samples
@@ -309,8 +309,60 @@ Densovirus seem to be missing from samples
 
 ------
 <div id='id-section5'/>
-### Entry 5:
-In progress
+### Entry 5: 2017-02-01
+
+## Info update: WGS    
+
+### 1. Applications:    
+-Population genetics: effective population size, demographic events (admixture), genetic relatedness, inbreeding   
+-Conservation (genomics): monitoring, breeding programs   
+-Taxonomic delineations   
+
+Benefits 
+* Higher power + resolution   
+* New possible research areas: screening for variation, adaptive potential of population e.g.   
+- QTL/Association mapping    
+- pinpoint loci of adaptations     
+- impact of genetic variation   
+- patterns of gene expression   
+- plastic response to environmental changes   
+- use of ancient material   
+- environmental samples
+
+### 2. Planning stage
+
+Basic considerations 
+- Is sequence necessary for purpose?
+- Do we have the resources for quality genome production? 
+low quality = low coverage of whole genome
+
+Limitations (Usually one individual sequenced):
+- Polymorphic genes   
+- Paralogs   
+- Rapidly evolving genes    
+- Large gene families    
+- Not type specimens (Use of pooled samples can help fix this)   
+- Impossible to sequence all nucleotides (centromeres an telomeres; highly repetitive regions)    
+- Error    
+- Working hypothesis: assembly tools    
+
+Prior Considerations
+- seq platform: 
+* Short: Illumina Hi-seq (150bp) and SOLID (50bp)    
+* Longer: Pacific Biosciences (5Kb), Ion torrent (~500bp), Illumina Molecule (up to 10KB)
+* Hybrids (studies typically use more than one i.e. both short and long reads for scaffolding)
+
+- Knowledge on organism
+* Genome size
+* Seq error rates
+* Repeat content 
+* Degree of genome duplications
+Recommended pilot short-insert seq
+
+### 3. Methods
+
+- Wet lab procedures 
+
 ------
 <div id='id-section6'/>
 ### Entry 6:
