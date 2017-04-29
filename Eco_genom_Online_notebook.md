@@ -488,9 +488,10 @@ Useful for population genetics (population genetic diversity of one species)
 
 - Library Prep
 
-Restriction enzymes -> Barcodes + Adaptors -> PCR -> sequence
+Restriction enzymes -> Barcodes + Adaptors -> PCR -> sequence  
 
-More info and drawings in notebook.
+More info and drawings in notebook.    
+
 ------
 <div id='id-section6'/>
 ### Entry 6:
