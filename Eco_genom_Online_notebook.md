@@ -35,8 +35,8 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Entry 1: 2017-01-18](#id-section1). First class; intros
 * [Entry 2: 2017-01-23](#id-section2). 
 * [Entry 3: 2017-01-25](#id-section3).
-* [Entry 4:](#id-section4).
-* [Entry 5:](#id-section5).
+* [Entry 4: 2017-01-30](#id-section4).
+* [Entry 5: 2017-02-01](#id-section5).
 * [Entry 6:](#id-section6).
 * [Entry 7:](#id-section7).
 * [Entry 8:](#id-section8).
