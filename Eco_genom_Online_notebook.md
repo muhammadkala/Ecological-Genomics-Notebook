@@ -415,10 +415,11 @@ Pipeline applicable to non models
 - Allele specific expression: environmental response of adaptation
 - Functional relevant subset of the genome
 
-|RNA seq | Microarray|
-|wide range expression| X|
-|X|Saturation of analog type fluorescent signal|
-|info on splicing events| X|
+
+RNA seq better than microarray in wide range expression, info on splicing events
+
+### 2. Limitations:
+
 ------
 <div id='id-section6'/>
 ### Entry 6:
