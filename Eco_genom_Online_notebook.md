@@ -418,8 +418,79 @@ Pipeline applicable to non models
 
 RNA seq better than microarray in wide range expression, info on splicing events
 
-### 2. Limitations:
+### 2. Limitations
 
+- Does not give abundance of protein or other post-translational modification of proteins (and function)
+
+### 3. Workflow
+
+Exp setup -> Tissue prep + library -> High throughput seq -> Transcriptome reconstruction -> Alignment of reads -> Read Qualification/Marker development -> Biological Influence
+
+- Setup 
+-Coding or regulatory   
+-Is there a reference genome?   
+-Alternative splicing?   
+-Technology?   
+-Population or specific treatments   
+
+- Tissue prep
+Small organisms-many tissues pulled
+-Sample should be in RNase free environment
+-DNase treatment
+-get rid of rRNAs
+Figures in physical textbook.
+
+- Library
+-Single end
+-Paired end
+
+- High throughput seq
+Choose platform:
+-Pyrosequencing by Roche (some incorrect polymer)
+-Ion torrent
+-GA/Hi-seq Illumina
+
+- Reconstruction 
+Figures in physical textbook.
+
+## Info Update: Amplicon seq
+
+Targetted approach for analyzing genetic variation in specific genomic region
+
+Amplicon is a targeted gene (region) to be amplified via PCR w/ specific primers
+
+- Library Prep
+
+Extract -> 1st PCR (amplify gene w/ primers) -> gel -> 2nd PCR w/ barcodes and adaptors (or directly to Seq. Facility) -> clean -> pool -> Seq facility   
+
+454 replaced by Mi-Seq platform from Illumina
+
+Trim adaptors
+Align
+
+- Limitation
+Time consuming to manually correct some sequencing mistakes
+
+- Advantages
+Save time and money
+
+## Info Update: GBS RAD-seq
+
+GBS: Genotyping by sequencing 
+RAD: Restriction assisted DNA sequencing (using restriction enzymes)
+
+GBS RAD-seq is between RNA-seq and Amplicon in terms of completeness of data and sampling 
+
+-lot of individuals
+-lots of SNPs across genomes
+-don't care about specific genes
+Useful for population genetics (population genetic diversity of one species)
+
+- Library Prep
+
+Restriction enzymes -> Barcodes + Adaptors -> PCR -> sequence
+
+More info and drawings in notebook.
 ------
 <div id='id-section6'/>
 ### Entry 6:
