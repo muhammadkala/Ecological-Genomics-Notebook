@@ -37,8 +37,8 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Entry 3: 2017-01-25](#id-section3).
 * [Entry 4: 2017-01-30](#id-section4).
 * [Entry 5: 2017-02-01](#id-section5).
-* [Entry 6:](#id-section6).
-* [Entry 7:](#id-section7).
+* [Entry 6: 2017-02-03](#id-section6).
+* [Entry 7: 2017-02-08](#id-section7).
 * [Entry 8:](#id-section8).
 * [Entry 9:](#id-section9).
 * [Entry 10:](#id-section10).
@@ -226,17 +226,17 @@ gene expression variation
 
 Reduced rep.:
 * RNA (coding)-more reads for highly expressed regions   
-* GBS/RAD (near restriction sites)
+* GBS/RAD (near restriction sites)    
 
-Extraction (DNA or RNA->cDNA), fragment sample, ligate adaptors (individual barcodes), add sequence adaptors, PCR
+Extraction (DNA or RNA->cDNA), fragment sample, ligate adaptors (individual barcodes), add sequence adaptors, PCR    
 
 ## 4. Sequence by Synthesis (SBS)
 
-Adapters are added to our DNA segments. DNA goes into a lane of flow cell. Adapters bind to oligo's and our DNA forms a bridge. A picture is taken every time a complementary labeled dNTP's is added.  
+Adapters are added to our DNA segments. DNA goes into a lane of flow cell. Adapters bind to oligo's and our DNA forms a bridge. A picture is taken every time a complementary labeled dNTP's is added.   
 
-90% of global data by Illumina
+90% of global data by Illumina     
 
-Combining different methods help in assembling genomes of non-model organisms (de novo assembly)
+Combining different methods help in assembling genomes of non-model organisms (de novo assembly)     
 
 ## Glossary 
 ```
@@ -288,19 +288,19 @@ Since mutation can diminish or augment avg fitness, big change mutations tend to
 
 - Widespread   
 - Many species affected (resistance vary among species)   
-- Starts with loss of turgor pressure and/or lesions (holes)   
-- Progress into limbs being pulled off (when sea stars move or through gravity)   
-- *Pisaster* *ochraceus* (Alaska to Baja, CA). Orange or purple   
-- First reports of disease in 2012 (Isolated cases from 1970)
-- Densovirus implicated   
-- Present in 70 yo museum specimens    
-- Outbreaks in 1970's, 1980's but not as extreme as current outbreak
-- All individuals exposed
+- Starts with loss of turgor pressure and/or lesions (holes)     
+- Progress into limbs being pulled off (when sea stars move or through gravity)      
+- *Pisaster* *ochraceus* (Alaska to Baja, CA). Orange or purple     
+- First reports of disease in 2012 (Isolated cases from 1970)     
+- Densovirus implicated     
+- Present in 70 yo museum specimens      
+- Outbreaks in 1970's, 1980's but not as extreme as current outbreak     
+- All individuals exposed     
 - Disease seem to be more prevalent intertidally (warmer temperatures, more variable environment)   
 - Epidermal (host biopsy). Extracted RNA, got all mRNA (poly A-tail) using 5 Illumina hi-Seq 3000PE100 lanes to get gene expression data.   
-- 16S rRNA amplified
-- Starfish collected and delivered within 24 hours of collection (all healthy at time)
-- Transmission might be environmental or through the gut
+- 16S rRNA amplified     
+- Starfish collected and delivered within 24 hours of collection (all healthy at time)     
+- Transmission might be environmental or through the gut     
 
 
 ## Update
@@ -317,149 +317,149 @@ Kirsten and I have chosen to look at SNPs to see if allelic differences might be
 ## Info update: WGS    
 
 ### 1. Applications:    
--Population genetics: effective population size, demographic events (admixture), genetic relatedness, inbreeding   
--Conservation (genomics): monitoring, breeding programs   
--Taxonomic delineations   
+-Population genetics: effective population size, demographic events (admixture), genetic relatedness, inbreeding    
+-Conservation (genomics): monitoring, breeding programs    
+-Taxonomic delineations    
 
 Benefits 
 * Higher power + resolution   
-* New possible research areas: screening for variation, adaptive potential of population e.g.   
--QTL/Association mapping    
--pinpoint loci of adaptations     
--impact of genetic variation   
--patterns of gene expression   
--plastic response to environmental changes   
--use of ancient material   
--environmental samples
+* New possible research areas: screening for variation, adaptive potential of population e.g.    
+-QTL/Association mapping     
+-pinpoint loci of adaptations      
+-impact of genetic variation    
+-patterns of gene expression    
+-plastic response to environmental changes    
+-use of ancient material    
+-environmental samples 
 
 ### 2. Planning stage
 
 Basic considerations 
-- Is sequence necessary for purpose?
-- Do we have the resources for quality genome production? 
-low quality = low coverage of whole genome
+- Is sequence necessary for purpose?    
+- Do we have the resources for quality genome production?     
+low quality = low coverage of whole genome    
 
 Limitations (Usually one individual sequenced):
-- Polymorphic genes   
-- Paralogs   
-- Rapidly evolving genes    
-- Large gene families    
-- Not type specimens (Use of pooled samples can help fix this)   
-- Impossible to sequence all nucleotides (centromeres an telomeres; highly repetitive regions)    
-- Error    
-- Working hypothesis: assembly tools    
+- Polymorphic genes    
+- Paralogs    
+- Rapidly evolving genes     
+- Large gene families     
+- Not type specimens (Use of pooled samples can help fix this)    
+- Impossible to sequence all nucleotides (centromeres an telomeres; highly repetitive regions)     
+- Error     
+- Working hypothesis: assembly tools     
 
-Prior Considerations
-- seq platform: 
--Short: Illumina Hi-seq (150bp) and SOLID (50bp)      
--Longer: Pacific Biosciences (5Kb), Ion torrent (~500bp), Illumina Molecule (up to 10KB)   
--Hybrids (studies typically use more than one i.e. both short and long reads for scaffolding)    
+Prior Considerations     
+- seq platform:     
+-Short: Illumina Hi-seq (150bp) and SOLID (50bp)       
+-Longer: Pacific Biosciences (5Kb), Ion torrent (~500bp), Illumina Molecule (up to 10KB)     
+-Hybrids (studies typically use more than one i.e. both short and long reads for scaffolding)      
 
-- Knowledge on organism
--Genome size    
--Seq error rates   
--Repeat content    
--Degree of genome duplications   
-Recommended pilot short-insert seq     
+- Knowledge on organism     
+-Genome size     
+-Seq error rates    
+-Repeat content     
+-Degree of genome duplications     
+Recommended pilot short-insert seq      
  
 ### 3. Methods
 
-Wet lab procedures 
-* Individual    
--Heterozygous position have adverse effects on assembly    
--Highly polypoid are challenging (special pipelines); use of inbred individuals, parthenogenic or genocentric offspring       
--Have metadata, age, sex, location
+Wet lab procedures    
+* Individual     
+-Heterozygous position have adverse effects on assembly     
+-Highly polypoid are challenging (special pipelines); use of inbred individuals, parthenogenic or genocentric offspring         
+-Have metadata, age, sex, location   
 
 * Tissue     
--Avoid energetically active tissue such as muslce (increase in mitochondrial DNA because increase in read depth)  
--Avoid gut+skin (non target DNA)       
+-Avoid energetically active tissue such as muslce (increase in mitochondrial DNA because increase in read depth)   
+-Avoid gut+skin (non target DNA)        
 
-* DNA
--High quality, non degradable    
--Check with high resolution gel     
+* DNA      
+-High quality, non degradable     
+-Check with high resolution gel      
 
-* Library Preparation   
-I. Use single reads/remove duplicated reads   
+* Library Preparation     
+I. Use single reads/remove duplicated reads    
 II. Insert sizes within 0.2-40 kb range (>20 kb for scaffold)    
 III. Read orientation:    
 -Inwards (paired-end)      
 -Outwards (outward)       
 Mis orientation can happen/ could be chimeric segment from non adjascent DNA     
 
-### 4. Genome assembly
+### 4. Genome assembly  
 
-Storage   
-Server    
+Storage     
+Server     
 Expertise    
 
 Pipeline applicable to non models    
 
-* Pre Assembly 
+* Pre Assembly    
 -Quality    
 -GC content    
 -Repeat abundance    
 -Proportion of duplicate read     
 -Seq for calibration must be removed (Illumina)    
 
-* De novo
+* De novo     
   
--Algorithms (minimize misassembly and improve contiguity)   
+-Algorithms (minimize misassembly and improve contiguity)    
 -OLC (Overlap-Layout-Consensus)    
 -Extension-based     
 -Hybrid approaches    
 
-## Info update: RNA-seq
+## Info update: RNA-seq   
 
 ### 1. Advantages:
 - Differential gene expression: in tissues there is variation    
-- Allele specific expression: environmental response of adaptation      
-- Functional relevant subset of the genome      
+- Allele specific expression: environmental response of adaptation       
+- Functional relevant subset of the genome       
 
 
 RNA seq better than microarray in wide range expression, info on splicing events     
 
 ### 2. Limitations
 
-- Does not give abundance of protein or other post-translational modification of proteins (and function)   
+- Does not give abundance of protein or other post-translational modification of proteins (and function)    
 
 ### 3. Workflow
 
 Exp setup -> Tissue prep + library -> High throughput seq -> Transcriptome reconstruction -> Alignment of reads -> Read Qualification/Marker development -> Biological Influence     
 
-- Setup 
+- Setup   
 -Coding or regulatory      
 -Is there a reference genome?     
 -Alternative splicing?     
 -Technology?     
 -Population or specific treatments     
 
-- Tissue prep
+- Tissue prep     
 Small organisms-many tissues pulled    
 -Sample should be in RNase free environment    
 -DNase treatment    
 -get rid of rRNAs      
-Figures in physical textbook.     
+Figures in physical textbook.      
 
-- Library
+- Library    
 -Single end     
 -Paired end      
 
-- High throughput seq
-Choose platform:     
+- High throughput seq     
+Choose platform:      
 -Pyrosequencing by Roche (some incorrect polymer)     
 -Ion torrent      
 -GA/Hi-seq Illumina     
 
-- Reconstruction 
-Figures in physical textbook.     
+- Reconstruction    
+Figures in physical textbook.      
 
-## Info Update: Amplicon seq
+## Info Update: Amplicon seq     
 
-Targetted approach for analyzing genetic variation in specific genomic region     
+Targetted approach for analyzing genetic variation in specific genomic region      
 
-Amplicon is a targeted gene (region) to be amplified via PCR w/ specific primers     
+Amplicon is a targeted gene (region) to be amplified via PCR w/ specific primers      
 
-- Library Prep
+- Library Prep     
 
 Extract -> 1st PCR (amplify gene w/ primers) -> gel -> 2nd PCR w/ barcodes and adaptors (or directly to Seq. Facility) -> clean -> pool -> Seq facility     
 
@@ -468,15 +468,15 @@ Extract -> 1st PCR (amplify gene w/ primers) -> gel -> 2nd PCR w/ barcodes and a
 Trim adaptors      
 Align    
 
-- Limitation
-Time consuming to manually correct some sequencing mistakes  
-
-- Advantages
-Save time and money    
+- Limitation   
+Time consuming to manually correct some sequencing mistakes    
+ 
+- Advantages    
+Save time and money     
 
 ## Info Update: GBS RAD-seq
 
-GBS: Genotyping by sequencing    
+GBS: Genotyping by sequencing     
 RAD: Restriction assisted DNA sequencing (using restriction enzymes)     
 
 GBS RAD-seq is between RNA-seq and Amplicon in terms of completeness of data and sampling     
@@ -486,7 +486,7 @@ GBS RAD-seq is between RNA-seq and Amplicon in terms of completeness of data and
 -don't care about specific genes     
 Useful for population genetics (population genetic diversity of one species)     
 
-- Library Prep
+- Library Prep    
 
 Restriction enzymes -> Barcodes + Adaptors -> PCR -> sequence    
 
@@ -498,79 +498,79 @@ More info and drawings in notebook.
 
 ## Info Update: RNA seq 2
 
-Approach
-Experimental Design
-Library Prep
-Sequencing 
-Receive Data
-Computer/ Server Setup
+Approach    
+Experimental Design     
+Library Prep     
+Sequencing     
+Receive Data    
+Computer/ Server Setup     
 
-- Workflow   
-1. Clean reads (files: .fastq, . fq, .gz)     
--adaptors    
--nucleotide quality     
--length          
+- Workflow    
+1. Clean reads (files: .fastq, . fq, .gz)      
+-adaptors     
+-nucleotide quality      
+-length           
 
 2. Evaluate Quality    
 
-3. De novo transcriptome assembly (.fasta) 
-3. A Evaluate assembly (compare to closely related species or Core Eukaryotic Genes N-50, # contigs)     
-3. B Annotation     
+3. De novo transcriptome assembly (.fasta)   
+3. A Evaluate assembly (compare to closely related species or Core Eukaryotic Genes N-50, # contigs)      
+3. B Annotation      
 
-4. Map reads to ref. transcriptome (.sam files; sequence alignment files)
+4. Map reads to ref. transcriptome (.sam files; sequence alignment files)     
 
-5. A Extract read count info (no of reads that map to each contig for each sample)    
-5. B Identify SNP's     
+5. A Extract read count info (no of reads that map to each contig for each sample)      
+5. B Identify SNP's      
 
-6. A Differential gene expression analyses and co expression network analysis    
+6. A Differential gene expression analyses and co expression network analysis      
 6. B Population genomics, genetic differentiation, pop. structure, demographic history, signatures of selection    
 
-## Dunning et al. 2014 Paper discussion
+## Dunning et al. 2014 Paper discussion    
 
-Unigene-alternative splice variant contigs are collapsed into "unigenes" (typically the longest)    
-Picture in notebook
+Unigene-alternative splice variant contigs are collapsed into "unigenes" (typically the longest)        
+Picture in notebook   
 
-Gene Ontology- Functional categories a gene is in (e.g. immune response gene)    
+Gene Ontology- Functional categories a gene is in (e.g. immune response gene)        
 
 3. B Annotation   
-Blast X to 
--nr (gene annotation)    
+Blast X to  
+-nr (gene annotation)     
 -uniprot database (curated protein database)    
 -gene ontology   
 
-Fisher's exact test (chi squared test)
-e.g. if 60K unigenes 
-~10% of them are involved in cuticular hydrocarbon
+Fisher's exact test (chi squared test)    
+e.g. if 60K unigenes    
+~10% of them are involved in cuticular hydrocarbon    
 
-2k differentially expressed genes 
-~20% of them are invovled in cuticular hydrocarbon (higher than predicted)
+2k differentially expressed genes    
+~20% of them are invovled in cuticular hydrocarbon (higher than predicted)     
 
-Q plot -> y-axis ancestry, x-axis individuals of species. colors represent portion of where genome of individuals come from.    
+Q plot -> y-axis ancestry, x-axis individuals of species. colors represent portion of where genome of individuals come from.       
 
-K-number of groups- cross validation support 3 groups best (lowest cross validation error)
+K-number of groups- cross validation support 3 groups best (lowest cross validation error)   
 
-Table2 
-CS- increased expression in cold shock    
-CS- increased expression in control    
-DRR- Number of differentially expressed genes    
-
+Table2    
+CS- increased expression in cold shock      
+CS- increased expression in control     
+DRR- Number of differentially expressed genes      
+ 
 ## Coding
 
-De novo assembly on Trinity
+De novo assembly on Trinity    
 
-Go on server through PuTTY
+Go on server through PuTTY    
 
-Cleaning on Trimmomatic PE
+Cleaning on Trimmomatic PE   
 
-fastq files e.g. -> 38_6-24_S_5_R1
+fastq files e.g. -> 38_6-24_S_5_R1    
 
-38 is the individual 
-6-24 is the date
-S is sick
-5 rating of sickness (0-5 from healthy to dead)
-R1 means right or left read
+38 is the individual    
+6-24 is the date    
+S is sick    
+5 rating of sickness (0-5 from healthy to dead)     
+R1 means right or left read      
 
-Rest of info on Tutorial
+Rest of info on Tutorial     
 
 ------
 <div id='id-section7'/>
@@ -584,49 +584,49 @@ Why study wild systems?
 -Silent genes responding to multiple stimuli      
 -Novel transcripts w/o homologs in closely related model organisms     
 
-- Methods
-Micro Array: easy for ecological analyses
-RNA-Seq: Genome-wide, more involved analyses
+- Methods    
+Micro Array: easy for ecological analyses    
+RNA-Seq: Genome-wide, more involved analyses     
 
-- Questions 
+- Questions   
 -Questions about variation in gene expression          
--How gene expression affect phenotypes    
--Effect of environmental stimuli on gene expression    
-Only 5 papers looked at all three (Venn Diagram in notebook about number of studies looking at each question)     
+-How gene expression affect phenotypes      
+-Effect of environmental stimuli on gene expression      
+Only 5 papers looked at all three (Venn Diagram in notebook about number of studies looking at each question)         
 
-1. Gene expression variation at species, population, individual levels. Variation at different time or life history stages.
+1. Gene expression variation at species, population, individual levels. Variation at different time or life history stages.      
 
-Evolutionary Process
-
--Gene expression heritable (naturally selected)     
+Evolutionary Process    
+ 
+-Gene expression heritable (naturally selected)       
 -Epigenetics      
 -Qst & Fst comparison     
 -eQTL- expression quatitative trait loci mapping     
 -Macroevolution: drift, bottleneck, selection    
 
-2. Environmental stimuli on gene expression 
+2. Environmental stimuli on gene expression     
 -abiotic stress    
 -environmental heterogeneity    
 -host-parasite interactions    
 -selective biotic & abiotic interactions       
--flash freezing (to avoid stimuli) takes a snapshot of the moment
--time course analysis- transcriptional response through time    
+-flash freezing (to avoid stimuli) takes a snapshot of the moment     
+-time course analysis- transcriptional response through time     
 
-3. How gene expression affect phenotype
--alternate phenotypes     
+3. How gene expression affect phenotype     
+-alternate phenotypes       
 -manipulating transcription to make inferences about genotype-phenotype relationships -> transgenics (moving from correlation to causation): RNAi, CRISPR    
 
-- Future     
--Combined micro arrays and RNA-seq (mostly used for model organisms)      
--Expand on databse for proposed ecological variations      
+- Future      
+-Combined micro arrays and RNA-seq (mostly used for model organisms)       
+-Expand on databse for proposed ecological variations       
 
-- Problems
--Bias in signal
--Heterologous arrays (relevant for micro arrays)    
--Polyploidy
--RNA pooling
--Statistical analyses
--unannotated genes
+- Problems    
+-Bias in signal     
+-Heterologous arrays (relevant for micro arrays)      
+-Polyploidy     
+-RNA pooling    
+-Statistical analyses       
+-unannotated genes    
 
 Great Question!!! *Is gene expression a phenotype itself or does it affect a phenotype?*    
 
