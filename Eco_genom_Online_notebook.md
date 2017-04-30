@@ -574,8 +574,61 @@ Rest of info on Tutorial
 
 ------
 <div id='id-section7'/>
-### Entry 7: 02-08-2017
+### Entry 7: 02-08-2017    
 
+## Info Update: Transcriptomics    
+
+- Intro    
+Why study wild systems?     
+-Non model/non traditional model organisms      
+-Silent genes responding to multiple stimuli      
+-Novel transcripts w/o homologs in closely related model organisms     
+
+- Methods
+Micro Array: easy for ecological analyses
+RNA-Seq: Genome-wide, more involved analyses
+
+- Questions 
+-Questions about variation in gene expression          
+-How gene expression affect phenotypes    
+-Effect of environmental stimuli on gene expression    
+Only 5 papers looked at all three (Venn Diagram in notebook about number of studies looking at each question)     
+
+1. Gene expression variation at species, population, individual levels. Variation at different time or life history stages.
+
+Evolutionary Process
+
+-Gene expression heritable (naturally selected)     
+-Epigenetics      
+-Qst & Fst comparison     
+-eQTL- expression quatitative trait loci mapping     
+-Macroevolution: drift, bottleneck, selection    
+
+2. Environmental stimuli on gene expression 
+-abiotic stress    
+-environmental heterogeneity    
+-host-parasite interactions    
+-selective biotic & abiotic interactions       
+-flash freezing (to avoid stimuli) takes a snapshot of the moment
+-time course analysis- transcriptional response through time    
+
+3. How gene expression affect phenotype
+-alternate phenotypes     
+-manipulating transcription to make inferences about genotype-phenotype relationships -> transgenics (moving from correlation to causation): RNAi, CRISPR    
+
+- Future     
+-Combined micro arrays and RNA-seq (mostly used for model organisms)      
+-Expand on databse for proposed ecological variations      
+
+- Problems
+-Bias in signal
+-Heterologous arrays (relevant for micro arrays)    
+-Polyploidy
+-RNA pooling
+-Statistical analyses
+-unannotated genes
+
+Great Question!!! *Is gene expression a phenotype itself or does it affect a phenotype?*    
 
 ------
 <div id='id-section8'/>
