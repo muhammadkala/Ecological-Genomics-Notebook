@@ -494,12 +494,89 @@ More info and drawings in notebook.
 
 ------
 <div id='id-section6'/>
-### Entry 6:
-In progress
+### Entry 6: 2017-02-06
+
+## Info Update: RNA seq 2
+
+Approach
+Experimental Design
+Library Prep
+Sequencing 
+Receive Data
+Computer/ Server Setup
+
+- Workflow   
+1. Clean reads (files: .fastq, . fq, .gz)     
+-adaptors    
+-nucleotide quality     
+-length          
+
+2. Evaluate Quality    
+
+3. De novo transcriptome assembly (.fasta) 
+3. A Evaluate assembly (compare to closely related species or Core Eukaryotic Genes N-50, # contigs)     
+3. B Annotation     
+
+4. Map reads to ref. transcriptome (.sam files; sequence alignment files)
+
+5. A Extract read count info (no of reads that map to each contig for each sample)    
+5. B Identify SNP's     
+
+6. A Differential gene expression analyses and co expression network analysis    
+6. B Population genomics, genetic differentiation, pop. structure, demographic history, signatures of selection    
+
+## Dunning et al. 2014 Paper discussion
+
+Unigene-alternative splice variant contigs are collapsed into "unigenes" (typically the longest)    
+Picture in notebook
+
+Gene Ontology- Functional categories a gene is in (e.g. immune response gene)    
+
+3. B Annotation   
+Blast X to 
+-nr (gene annotation)    
+-uniprot database (curated protein database)    
+-gene ontology   
+
+Fisher's exact test (chi squared test)
+e.g. if 60K unigenes 
+~10% of them are involved in cuticular hydrocarbon
+
+2k differentially expressed genes 
+~20% of them are invovled in cuticular hydrocarbon (higher than predicted)
+
+Q plot -> y-axis ancestry, x-axis individuals of species. colors represent portion of where genome of individuals come from.    
+
+K-number of groups- cross validation support 3 groups best (lowest cross validation error)
+
+Table2 
+CS- increased expression in cold shock    
+CS- increased expression in control    
+DRR- Number of differentially expressed genes    
+
+## Coding
+
+De novo assembly on Trinity
+
+Go on server through PuTTY
+
+Cleaning on Trimmomatic PE
+
+fastq files e.g. -> 38_6-24_S_5_R1
+
+38 is the individual 
+6-24 is the date
+S is sick
+5 rating of sickness (0-5 from healthy to dead)
+R1 means right or left read
+
+Rest of info on Tutorial
+
 ------
 <div id='id-section7'/>
-### Entry 7:
-In progress
+### Entry 7: 02-08-2017
+
+
 ------
 <div id='id-section8'/>
 ### Entry 8:
