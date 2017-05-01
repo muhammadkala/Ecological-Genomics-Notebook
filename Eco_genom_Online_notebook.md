@@ -632,11 +632,42 @@ Great Question!!! *Is gene expression a phenotype itself or does it affect a phe
 
 ------
 <div id='id-section8'/>
-### Entry 8:
-In progress
+### Entry 8: 2017-02-13
+
+## Info Update: RNA-seq 3
+
+- Background
+-Enables DE examination (inter-population individual)    
+Disease Resistance
+Mating Behavior
+Adaptive significance
+
+-Molecular Mechanisms -> Phenotypic/behavioral plasticity, migration patterns
+
+-Limitations
+Reference genome quality
+Gene annotation availability
+Expense per sample lib. prep.
+
+- Issues
+-Under utilization of biological replicates
+Requiring independent library preparations
+Doesn't include pooled samples
+23/158 studies (15%) > 3 Bio replicates
+Derive broad biological conclusions
+
+-Prioritize seq depth over replication 
+
+-Wide dynamic range of RNA-seq data noisy (Poisson counting error, technical variance, biological variance)
+
+```
+Glossary
+- sequence coverage: the average # of reads that align 
+
 ------
 <div id='id-section9'/>
 ### Entry 9:
+In progress
 ------
 <div id='id-section10'/>
 ### Entry 10:
