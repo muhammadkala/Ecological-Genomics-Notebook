@@ -37,9 +37,9 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Entry 3: 2017-01-25](#id-section3).
 * [Entry 4: 2017-01-30](#id-section4).
 * [Entry 5: 2017-02-01](#id-section5).
-* [Entry 6: 2017-02-03](#id-section6).
+* [Entry 6: 2017-02-06](#id-section6).
 * [Entry 7: 2017-02-08](#id-section7).
-* [Entry 8:](#id-section8).
+* [Entry 8: 2017-02-13](#id-section8).
 * [Entry 9:](#id-section9).
 * [Entry 10:](#id-section10).
 * [Entry 11:](#id-section11).
@@ -662,7 +662,21 @@ Derive broad biological conclusions
 
 ```
 Glossary
-- sequence coverage: the average # of reads that align 
+- sequence coverage: the average # of reads that align/cover known reference bases
+- read depth: total # bases sequenced/aligned at given reference base position
+- power: probability of rejecting false null hypothesis
+```
+
+- General rules of thumb
+1. Use more biological replicates instead of depth
+2. Sequence depth >10 reads per transcript. ~10-20 million mapped reads/samples
+3. 3 biological replicates per condition
+4. Conduct a pilot experiment to know:
+i) What is best/most powerful experiment that can be afforded
+ii) what is the smallest fold change that can be detected
+
+
+
 
 ------
 <div id='id-section9'/>
