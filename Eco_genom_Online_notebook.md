@@ -534,7 +534,7 @@ Use zcat to look at zipped file
 
 zcat FILENAME | head
 
-
+"head" gives a list of 
 
 ------
 <div id='id-section6'/>
