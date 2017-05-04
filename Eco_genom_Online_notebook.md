@@ -492,6 +492,50 @@ Restriction enzymes -> Barcodes + Adaptors -> PCR -> sequence
 
 More info and drawings in notebook.      
 
+
+##Coding
+
+Doing a de novo assembly on Trinity 
+
+First, we will be cleaning files using Trimmomatic PE
+
+Logging in to terminal (through PuTTY)
+
+server pbio381.uvm.edu
+Use UVM login and password as login and password
+
+"top" command that tells us who is using cpus in the server
+
+"q" quit
+
+"ll" List all files in the current directory
+
+"mkdir abc" makes a directory (folder) called "abc" where you are
+
+"~" home directory (we all have one)
+
+"cd" makes you change directory (so cd ~ makes you go to home directory)
+
+"pw" tells us where we are (path from home directory)
+
+We will evaluate, clean and evaluate some fastq files each.
+
+Mine are 
+09_5-14_S_2_R1.fq.gz
+09_5-14_S_2_R2.fq.gz
+
+09 is the individual number
+5-14  is the date
+S is sick (H would be a healthy individual)
+2 (rating of sickness on a 0-5 scale, 0 being healthy, and 5 being dead)
+"cp" command for copy ("cp XYZ ~/mydata/" means copy file XYZ into the mydata that is in home directory)
+
+Use zcat to look at zipped file
+
+zcat FILENAME | head
+
+
+
 ------
 <div id='id-section6'/>
 ### Entry 6: 2017-02-06
