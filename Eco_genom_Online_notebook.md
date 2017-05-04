@@ -534,9 +534,16 @@ Use zcat to look at zipped file
 
 zcat FILENAME | head
 
+"head" gives us the first few lines (10?) instead of showing the whole file
+
+Lines
 open line with "J00160...." are the sequencing details (adaptors...etc)
 sequence
 letters giving the quality of the sequence above
+quality score
+
+fastqc is used to clean file
+
 
 ------
 <div id='id-section6'/>
