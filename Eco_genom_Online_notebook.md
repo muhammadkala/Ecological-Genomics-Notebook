@@ -493,7 +493,7 @@ Restriction enzymes -> Barcodes + Adaptors -> PCR -> sequence
 More info and drawings in notebook.      
 
 
-##Coding
+## Coding
 
 Doing a de novo assembly on Trinity 
 
