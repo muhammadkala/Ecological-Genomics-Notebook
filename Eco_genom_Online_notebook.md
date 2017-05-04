@@ -534,7 +534,9 @@ Use zcat to look at zipped file
 
 zcat FILENAME | head
 
-"head" gives a list of 
+open line with "J00160...." are the sequencing details (adaptors...etc)
+sequence
+letters giving the quality of the sequence above
 
 ------
 <div id='id-section6'/>
