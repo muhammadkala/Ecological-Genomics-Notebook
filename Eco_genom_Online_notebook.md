@@ -62,7 +62,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Entry 28:](#id-section28).
 * [Entry 29: Code for HW2](#id-section29).
 * [Entry 30: Code for HW3](#id-section30).
-* [Entry 31:](#id-section31).
+* [Entry 31: Scripts for Project (microbiome)](#id-section31).
 * [Entry 32:](#id-section32).
 * [Entry 33:](#id-section33).
 * [Entry 34:](#id-section34).
@@ -1102,7 +1102,90 @@ gl1$loc.names[which(quantile(abs(pca1$loadings),0.999)>0.0770)]
 ```
 ------
 <div id='id-section31'/>
-### Entry 31:
+### Entry 31: Scripts for Project (Microbiome)
+
+```     
+library("phyloseq"); packageVersion("phyloseq")    
+library("DESeq2")
+packageVersion("DESeq2")
+library("ggplot2")
+theme_set(theme_bw())
+
+#Import the OTU table
+otutable <- import_biom(BIOMfilename = 'otu_table_mc2_w_tax_no_pynast_failures_no_chimeras_frequency_filtered.biom', 
+                        treefilename = 'rep_set_no_chimeras.tre', 
+                        parseFunction = parse_taxonomy_greengenes)
+
+#The warnings are ok. There is 1 warning for every OTU that doesn't have a taxonomy assignment
+
+#Import the mapping file
+mapping <- import_qiime_sample_data(mapfilename = 'R_map.txt')
+
+#Merge the mapping file to the OTU table
+phylo <- merge_phyloseq(otutable, mapping)
+
+#Check to make sure the imports worked
+phylo
+
+###############################################################################
+####Testing for differentially expressed OTUs between Sick and Healthy samples
+####while controlling for the repeated measures on each individual
+###############################################################################
+
+##For now we're only going to look at differences between Sick and Healthy samples and 
+##remove the Dead samples from the analysis
+phylo_subset = subset_samples(phylo, Phenotype != "Dead")
+
+##We want to numbers of each individual to be a factor. Right now it's an integer so we have to change that.
+class(sample_data(phylo_subset)$individual)
+sample_data(phylo_subset)$individual<-factor(sample_data(phylo_subset)$individual)
+
+##Phyloseq's wrapper to get OTU data into DESeq
+pheno <- phyloseq_to_deseq2(phylo_subset, ~ individual + Phenotype)
+
+##Run DESeq. This command takes a bit of time
+pheno_deseq_test <- DESeq(pheno, test="Wald")
+
+##Get results from DESeq
+pheno_results <- results(pheno_deseq_test)
+
+##Have a look at the summary
+summary(pheno_results)
+head(pheno_results)
+
+##Make table with OTUs padj<0.05
+alpha <- 0.05
+pheno_sigtab <- pheno_results[which(pheno_results$padj < alpha), ]
+
+##Add taxa info to that table
+pheno_sigtab <- cbind(as(pheno_sigtab, "data.frame"), as(tax_table(phylo)[rownames(pheno_sigtab), ], "matrix"))
+tail(pheno_sigtab)
+
+##Save the table to your desktop
+write.table(pheno_sigtab, "DE_OTU_sickk_vs_healthy.txt", sep="\t")
+
+##plot taxa of all otus padj<0.05 using ggplots2
+scale_fill_discrete <- function(palname = "Set1", ...) {
+    scale_fill_brewer(palette = palname, ...)
+}
+
+x <- tapply(pheno_sigtab$log2FoldChange, pheno_sigtab$Phylum, function(x) max(x))
+x <- sort(x, TRUE)
+pheno_sigtab$Phylum = factor(as.character(pheno_sigtab$Phylum), levels=names(x))
+# Family order
+x <- tapply(pheno_sigtab$log2FoldChange, pheno_sigtab$Family, function(x) max(x))
+x <- sort(x, TRUE)
+pheno_sigtab$Family = factor(as.character(pheno_sigtab$Family), levels=names(x))
+ggplot(pheno_sigtab, aes(x=Family, y=log2FoldChange, color=Phylum)) + geom_point(size=3) + 
+  theme(axis.text.x = element_text(angle = -90, hjust = 0, vjust=0.5))
+
+##plot counts across days for individual otus
+title <- "OTU Number"
+data <- plotCounts(pheno_deseq_test, "OTU Number" , 
+                   intgroup=c("Day","Phenotype"), returnData=TRUE)
+ggplot(data, aes(x=Day, y=count, color=Phenotype, group=Phenotype)) + 
+  geom_point() + stat_smooth(se=FALSE,method="loess") +  scale_y_log10() + ggtitle(title)     
+```
 ------
 <div id='id-section32'/>
 ### Entry 32:
