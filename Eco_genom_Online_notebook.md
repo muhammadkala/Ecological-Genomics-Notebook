@@ -759,8 +759,8 @@ Install DESeq2 package in R.
 <div id='id-section9'/>
 ### Entry 9: 2017-02-15 and 2017-02-22
 
-Class notes in physical notebook
-Info Update on SNPs and Population genomics
+Class notes in physical notebook     
+## Info Update on SNPs and Population genomics      
 
 ## Coding:
 
@@ -773,14 +773,16 @@ Using DESeq2 for gene expression analysis on R
 <div id='id-section10'/>
 ### Entry 10: 2017-02-27
     
-Class notes in physical notebook
-Phylogenomicist Scott Edwards' visit 
+
+Class notes in physical notebook     
+
+## Phylogenomicist Scott Edwards' visit    
 
 ------
 <div id='id-section11'/>
 ### Entry 11: 2017-03-01
 
-Info Update: ME!! on heretic voodoo magic aka gene co-expression network analysis :)      
+## Info Update: ME!! on heretic voodoo magic aka gene co-expression network analysis :)      
 
 Notes in notebook (pictures posted soon)     
 
@@ -797,7 +799,7 @@ Refer to [Andrew's note](https://github.com/adnguyen/Notebooks_and_Protocols/blo
 ### Entry 13: 2017-03-08
 
 Notes in physical notebook (pictures posted soon)
-Info update on Rate of evolution
+## Info update on Rate of evolution
 
 ## Coding:
 
@@ -867,7 +869,7 @@ null device
 ### Entry 14: 2017-03-20    
 
 Notes on physical notebook     
-Info update on Local and Global Ancestry      
+## Info update on Local and Global Ancestry      
 
 ## Coding:    
 
@@ -910,7 +912,7 @@ Notes, Info update on selective sweep, discussion on [Andrew's Github](https://g
 ### Entry 17: 2017-03-29     
 
 Notes in notebook     
-Info update on detecting local adaptation      
+## Info update on detecting local adaptation      
 
 ## Coding     
 Admixture      
@@ -922,17 +924,32 @@ Admixture
 ### Entry 18: 2017-04-03    
 
 Notes in Notebook 9to be posted soon)    
-Karl Fetter on Fst 
+## Karl Fetter on Fst   
 [Notes on Fst](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-04-03_Popgenomics5_outlier_annotations_DAPC_OutFLANK.html) and [OUTFLANK](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-04-03_OUTFLANK-yourself.html)
 
 ------
 <div id='id-section19'/>
-### Entry 19: 2017-04-05
+### Entry 19: 2017-04-05    
+
+Note in Notebook    
+
+## Info update on Annotation     
+
+[Tutorial and info](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-04-05_annotation_tutorial3.html)    
 
 
 ------
 <div id='id-section20'/>
-### Entry 20:
+### Entry 20:2017-04-08     
+
+Notes in notebook
+
+## Info update on Microbiome     
+
+## Coding     
+
+Microbiome with Melanie
+[Analyzing 16S amplicon tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-04-10_16sAmipliconSeqData.html)    
 ------
 <div id='id-section21'/>
 ### Entry 21:
