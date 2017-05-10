@@ -40,7 +40,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Entry 6: 2017-02-06](#id-section6).
 * [Entry 7: 2017-02-08](#id-section7).
 * [Entry 8: 2017-02-13](#id-section8).
-* [Entry 9:](#id-section9).
+* [Entry 9: 2017-02-15 and 2017-02-22](#id-section9).
 * [Entry 10:](#id-section10).
 * [Entry 11:](#id-section11).
 * [Entry 12:](#id-section12).
@@ -772,7 +772,7 @@ Using DESeq2 for gene expression analysis on R
 ------
 <div id='id-section10'/>
 ### Entry 10: 2017-02-27
-
+    
 Class notes in physical notebook
 Phylogenomicist Scott Edwards' visit 
 
@@ -780,16 +780,17 @@ Phylogenomicist Scott Edwards' visit
 <div id='id-section11'/>
 ### Entry 11: 2017-03-01
 
-Info Update: ME!! on heretic voodoo magic aka gene co-expression network analysis :)
+Info Update: ME!! on heretic voodoo magic aka gene co-expression network analysis :)      
 
-Notes in notebook (pictures posted soon)
+Notes in notebook (pictures posted soon)     
+
 ------
 <div id='id-section12'/>
 ### Entry 12: 2017-03-06
 
-Absent 
+Absent       
 
-Refer to [Andrew's note](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md#id-section15) and [Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-06_Tutorials_PopGenomics1.html) for notes and population genomics coding
+Refer to [Andrew's note](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md#id-section15) and [Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-06_Tutorials_PopGenomics1.html) for notes and population genomics coding       
 
 ------
 <div id='id-section13'/>
@@ -811,19 +812,19 @@ $ gzip SSW_all_biallelic.MAF0.02.Miss0.8.recode.vcf
 $ vcftools --gzvcf SSW_all_biallelic.MAF0.02.Miss0.8.recode.vcf --hardy       
 ```
 
-min-alleles 2 represents minimum number of alleles at each SNP set at 2
-max-alleles 2 represents the maximum number of alleles for each SNP set at 2(typically not common to get more than 2)
-maf 0.02 means that alleles with less than 2% frequency were ignored
-max-missing 0.8- include only sites that were present in 80% in samples
+min-alleles 2 represents minimum number of alleles at each SNP set at 2     
+max-alleles 2 represents the maximum number of alleles for each SNP set at 2(typically not common to get more than 2)     
+maf 0.02 means that alleles with less than 2% frequency were ignored     
+max-missing 0.8- include only sites that were present in 80% in samples     
 
 
-Info on calculating diversity metrics in tutorial.
+Info on calculating diversity metrics in tutorial.     
 
-Subset vcf file into healthy and sick
+Subset vcf file into healthy and sick     
 
-Allele frequencies between H and S individuals and Fst calculated and plotted on R.
+Allele frequencies between H and S individuals and Fst calculated and plotted on R.     
 
-Command line version of R can be used on server. 
+Command line version of R can be used on server.     
 ```
 R
 
@@ -846,7 +847,7 @@ Platform: x86_64-redhat-linux-gnu (64-bit)
  $ WEIR_AND_COCKERHAM_FST: num  0.0305 0.0085 0.0305 -0.0188 0.0732 ...
 ```
 
-Saving it to pdf
+Saving it to pdf    
 
 ```
  
@@ -863,54 +864,72 @@ null device
 
 ------
 <div id='id-section14'/>
-### Entry 14: 2017-03-20
+### Entry 14: 2017-03-20    
 
-Notes on physical notebook
-Info update on Ancestry
+Notes on physical notebook     
+Info update on Local and Global Ancestry      
 
-## Coding:
+## Coding:    
 
-Finishing up on diversity and allele frequency calculations
+Finishing up on diversity and allele frequency calculations     
 
-[Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-20_Tutorials_PopGenomics3.html)
+[Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-20_Tutorials_PopGenomics3.html)        
 
-Use grep to combine HS and SS into one group
+Use grep to combine HS and SS into one group     
 
-Use of vcf tools to refilter
+Use of vcf tools to refilter    
 
-Bring data to our computer for analysis and plotting on R
-[R script](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-20_populationgenomics3_R.html)
+Bring data to our computer for analysis and plotting on R     
+[R script](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-20_populationgenomics3_R.html)     
 
 
 ------
 <div id='id-section15'/>
-### Entry 15: 2017-03-22
+### Entry 15: 2017-03-22     
 
-Absent 
-Notes, Info update on inferrence divergence history and discussion available on [Andrew's github](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md#id-section18)
+Absent     
+Notes, Info update on inferrence divergence history and discussion available on [Andrew's github](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md#id-section18)     
 
-Coding info [Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-22_Tutorials_PopulGenomics4.html)
+## Coding      
 
-[R script](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-22_pop4_followalong.html)
+[R script](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-22_pop4_followalong.html)     
 
 
 ------
 <div id='id-section16'/>
 ### Entry 16:2017-03-27
 
-Absent
+Absent     
 Notes, Info update on selective sweep, discussion on [Andrew's Github](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md#id-section19)
-Make up day for coding
+## Coding     
+[Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-22_Tutorials_PopulGenomics4.html)
+
 
 ------
 <div id='id-section17'/>
-### Entry 17:
+### Entry 17: 2017-03-29     
+
+Notes in notebook     
+Info update on detecting local adaptation      
+
+## Coding     
+Admixture      
+[Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-22_Tutorials_PopulGenomics4.html) and [R script](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-22_pop4_followalong.html)    
+
+
 ------
 <div id='id-section18'/>
-### Entry 18:
+### Entry 18: 2017-04-03    
+
+Notes in Notebook 9to be posted soon)    
+Karl Fetter on Fst 
+[Notes on Fst](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-04-03_Popgenomics5_outlier_annotations_DAPC_OutFLANK.html) and [OUTFLANK](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-04-03_OUTFLANK-yourself.html)
+
 ------
 <div id='id-section19'/>
-### Entry 19:
+### Entry 19: 2017-04-05
+
+
 ------
 <div id='id-section20'/>
 ### Entry 20:
