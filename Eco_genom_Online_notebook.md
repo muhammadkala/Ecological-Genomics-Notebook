@@ -41,16 +41,16 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Entry 7: 2017-02-08](#id-section7).
 * [Entry 8: 2017-02-13](#id-section8).
 * [Entry 9: 2017-02-15 and 2017-02-22](#id-section9).
-* [Entry 10:](#id-section10).
-* [Entry 11:](#id-section11).
-* [Entry 12:](#id-section12).
-* [Entry 13:](#id-section13).
-* [Entry 14:](#id-section14).
-* [Entry 15:](#id-section15).
-* [Entry 16:](#id-section16).
-* [Entry 17:](#id-section17).
-* [Entry 18:](#id-section18).
-* [Entry 19:](#id-section19).
+* [Entry 10: 2017-02-27](#id-section10).
+* [Entry 11: 2017-03-01](#id-section11).
+* [Entry 12: 2017-03-06](#id-section12).
+* [Entry 13: 2017-03-08](#id-section13).
+* [Entry 14: 2017-03-20](#id-section14).
+* [Entry 15: 2017-03-22](#id-section15).
+* [Entry 16: 2017-03-27](#id-section16).
+* [Entry 17: 2017-03-29](#id-section17).
+* [Entry 18: 2017-04-03](#id-section18).
+* [Entry 19: 2017-04-05](#id-section19).
 * [Entry 20:](#id-section20).
 * [Entry 21:](#id-section21).
 * [Entry 22:](#id-section22).
