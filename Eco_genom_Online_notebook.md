@@ -306,7 +306,7 @@ Since mutation can diminish or augment avg fitness, big change mutations tend to
 ## Update
 Densovirus seem to be missing from samples
 
-## Project ideas for each group in notebook and on [Andrew's github] (https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md#id-section4) 
+## Project ideas for each group in notebook and on [Andrew's github](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md#id-section4) 
 
 Kirsten and I have chosen to look at SNPs to see if allelic differences might be accounting for resistance to disease, and maybe look at microbiome as well.
 
@@ -518,31 +518,14 @@ Use UVM login and password as login and password
 
 "pw" tells us where we are (path from home directory)
 
-We will evaluate, clean and evaluate some fastq files each.
+"rm" remove file
 
-Mine are 
-09_5-14_S_2_R1.fq.gz
-09_5-14_S_2_R2.fq.gz
+"mv" move files    
 
-09 is the individual number
-5-14  is the date
-S is sick (H would be a healthy individual)
-2 (rating of sickness on a 0-5 scale, 0 being healthy, and 5 being dead)
-"cp" command for copy ("cp XYZ ~/mydata/" means copy file XYZ into the mydata that is in home directory)
 
-Use zcat to look at zipped file
 
-zcat FILENAME | head
+[Unix Cheatsheet](https://files.fosswire.com/2007/08/fwunixref.pdf)
 
-"head" gives us the first few lines (10?) instead of showing the whole file
-
-Lines
-open line with "J00160...." are the sequencing details (adaptors...etc)
-sequence
-letters giving the quality of the sequence above
-quality score
-
-fastqc is used to clean file
 
 
 ------
@@ -615,15 +598,33 @@ Go on server through PuTTY
 
 Cleaning on Trimmomatic PE   
 
-fastq files e.g. -> 38_6-24_S_5_R1    
+We will evaluate, clean and evaluate some fastq files each.
 
-38 is the individual    
-6-24 is the date    
-S is sick    
-5 rating of sickness (0-5 from healthy to dead)     
-R1 means right or left read      
 
-Rest of info on Tutorial     
+Mine are 
+09_5-14_S_2_R1.fq.gz
+09_5-14_S_2_R2.fq.gz
+
+09 is the individual number
+5-14  is the date
+S is sick (H would be a healthy individual)
+2 (rating of sickness on a 0-5 scale, 0 being healthy, and 5 being dead)
+"cp" command for copy ("cp XYZ ~/mydata/" means copy file XYZ into the mydata that is in home directory)
+
+Use zcat to look at zipped file
+
+zcat FILENAME | head
+
+"head" gives us the first few lines (10?) instead of showing the whole file
+
+Lines
+open line with "J00160...." are the sequencing details (adaptors...etc)
+sequence
+letters giving the quality of the sequence above
+quality score
+
+
+Rest of info (about phred score...etc) on [Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-02-06_RNAseq_tutorial.html)     
 
 ------
 <div id='id-section7'/>
@@ -681,7 +682,16 @@ Evolutionary Process
 -Statistical analyses       
 -unannotated genes    
 
-Great Question!!! *Is gene expression a phenotype itself or does it affect a phenotype?*    
+Great Question!!! *Is gene expression a phenotype itself or does it affect a phenotype?* 
+
+## Coding:
+
+Moving files to PC using WinSCP
+
+Finish cleaning on Trimmomatic   
+Start assembly
+
+[Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-02-13_RNAseq_Mapping.html)
 
 ------
 <div id='id-section8'/>
@@ -729,33 +739,169 @@ i) What is best/most powerful experiment that can be afforded
 ii) what is the smallest fold change that can be detected
 
 
+## Coding:
 
+grep command and tutorial script used to know whether a read maps to a single place on the transcriptome or several. Important for gene expression studies since expression of a gene is based on the number of read counts. 
+
+[Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-02-15_RNAseq_Map_Count.html)
+
+Extracting read counts from SAM file
+
+All SAM files put together using a bash script on the tutorial.
+
+Cleaning up files and install Trinity and Bowtie
+
+Instructions to start screen on PuTTY on Tutorial (can have things running in the background even when we are not on)
+
+Install DESeq2 package in R. 
 
 ------
 <div id='id-section9'/>
-### Entry 9:
-In progress
+### Entry 9: 2017-02-15 and 2017-02-22
+
+Class notes in physical notebook
+Info Update on SNPs and Population genomics
+
+## Coding:
+
+Using DESeq2 for gene expression analysis on R
+
+[DESeq2 Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-2-22_RNAseqDGE.html)
+
+
 ------
 <div id='id-section10'/>
-### Entry 10:
+### Entry 10: 2017-02-27
+
+Class notes in physical notebook
+Phylogenomicist Scott Edwards' visit 
+
 ------
 <div id='id-section11'/>
-### Entry 11:
+### Entry 11: 2017-03-01
+
+Info Update: ME!! on heretic voodoo magic aka gene co-expression network analysis :)
+
+Notes in notebook (pictures posted soon)
 ------
 <div id='id-section12'/>
-### Entry 12:
+### Entry 12: 2017-03-06
+
+Absent 
+
+Refer to [Andrew's note](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md#id-section15) and [Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-06_Tutorials_PopGenomics1.html) for notes and population genomics coding
+
 ------
 <div id='id-section13'/>
-### Entry 13:
+### Entry 13: 2017-03-08
+
+Notes in physical notebook (pictures posted soon)
+Info update on Rate of evolution
+
+## Coding:
+
+[Population Genomics Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-08_Tutorials_PopGenomics2.html)
+
+vcf tools filtering strategy from last time       
+```
+$ vcftools --gzvcf SSW_byind.txt.vcf.gz --min-alleles 2 --max-alleles 2 --maf 0.02 --max-missing 0.8 --recode --out ~/SSW_all_biallelic.MAF0.02.Miss0.8    
+
+$ gzip SSW_all_biallelic.MAF0.02.Miss0.8.recode.vcf      
+
+$ vcftools --gzvcf SSW_all_biallelic.MAF0.02.Miss0.8.recode.vcf --hardy       
+```
+
+min-alleles 2 represents minimum number of alleles at each SNP set at 2
+max-alleles 2 represents the maximum number of alleles for each SNP set at 2(typically not common to get more than 2)
+maf 0.02 means that alleles with less than 2% frequency were ignored
+max-missing 0.8- include only sites that were present in 80% in samples
+
+
+Info on calculating diversity metrics in tutorial.
+
+Subset vcf file into healthy and sick
+
+Allele frequencies between H and S individuals and Fst calculated and plotted on R.
+
+Command line version of R can be used on server. 
+```
+R
+
+R version 3.3.2 (2016-10-31) -- "Sincere Pumpkin Patch"
+
+Copyright (C) 2016 The R Foundation for Statistical Computing
+
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+> fst <- read.table("HvS_OneSampPerInd.weir.fst",header=T)
+
+> str(fst)
+
+'data.frame':   442 obs. of  3 variables:
+
+ $ CHROM : Factor w/ 111 levels "TRINITY_DN35598_c0_g1_TRINITY_DN35598_c0_g1_i1_g.5802_m.5802",..: 65 65 100 100 100 100 100 100 88 88 ...
+
+ $ POS : int  4566 4665 978 1404 1722 3426 3729 3912 115 141 ...
+
+ $ WEIR_AND_COCKERHAM_FST: num  0.0305 0.0085 0.0305 -0.0188 0.0732 ...
+```
+
+Saving it to pdf
+
+```
+ 
+
+> pdf("HvS_Fst.pdf")
+
+> hist(fst$WEIR_AND_COCKERHAM_FST, breaks=20, col="red")
+
+> dev.off()
+
+null device 
+```
+
+
 ------
 <div id='id-section14'/>
-### Entry 14:
+### Entry 14: 2017-03-20
+
+Notes on physical notebook
+Info update on Ancestry
+
+## Coding:
+
+Finishing up on diversity and allele frequency calculations
+
+[Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-20_Tutorials_PopGenomics3.html)
+
+Use grep to combine HS and SS into one group
+
+Use of vcf tools to refilter
+
+Bring data to our computer for analysis and plotting on R
+[R script](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-20_populationgenomics3_R.html)
+
+
 ------
 <div id='id-section15'/>
-### Entry 15:
+### Entry 15: 2017-03-22
+
+Absent 
+Notes, Info update on inferrence divergence history and discussion available on [Andrew's github](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md#id-section18)
+
+Coding info [Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-22_Tutorials_PopulGenomics4.html)
+
+[R script](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-22_pop4_followalong.html)
+
+
 ------
 <div id='id-section16'/>
-### Entry 16:
+### Entry 16:2017-03-27
+
+Absent
+Notes, Info update on selective sweep, discussion on [Andrew's Github](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md#id-section19)
+Make up day for coding
+
 ------
 <div id='id-section17'/>
 ### Entry 17:
