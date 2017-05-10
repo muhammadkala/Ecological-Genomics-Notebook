@@ -788,20 +788,20 @@ Notes in notebook (pictures posted soon)
 
 ------
 <div id='id-section12'/>
-### Entry 12: 2017-03-06
+### Entry 12: 2017-03-06     
 
-Absent       
+I was absent       
 
 Refer to [Andrew's note](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md#id-section15) and [Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-06_Tutorials_PopGenomics1.html) for notes and population genomics coding       
 
 ------
 <div id='id-section13'/>
-### Entry 13: 2017-03-08
+### Entry 13: 2017-03-08      
 
-Notes in physical notebook (pictures posted soon)
-## Info update on Rate of evolution
+Notes in physical notebook (pictures posted soon)      
+## Info update on Rate of evolution       
 
-## Coding:
+## Coding:         
 
 [Population Genomics Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-08_Tutorials_PopGenomics2.html)
 
@@ -866,14 +866,14 @@ null device
 
 ------
 <div id='id-section14'/>
-### Entry 14: 2017-03-20    
+### Entry 14: 2017-03-20      
 
-Notes on physical notebook     
+Notes on physical notebook       
 ## Info update on Local and Global Ancestry      
 
 ## Coding:    
 
-Finishing up on diversity and allele frequency calculations     
+Finishing up on diversity and allele frequency calculations      
 
 [Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-20_Tutorials_PopGenomics3.html)        
 
@@ -899,9 +899,9 @@ Notes, Info update on inferrence divergence history and discussion available on 
 
 ------
 <div id='id-section16'/>
-### Entry 16:2017-03-27
+### Entry 16:2017-03-27      
 
-Absent     
+I was absent     
 Notes, Info update on selective sweep, discussion on [Andrew's Github](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md#id-section19)
 ## Coding     
 [Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-22_Tutorials_PopulGenomics4.html)
@@ -924,16 +924,16 @@ Admixture
 ### Entry 18: 2017-04-03    
 
 Notes in Notebook 9to be posted soon)    
-## Karl Fetter on Fst   
+## Karl Fetter on Fst    
 [Notes on Fst](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-04-03_Popgenomics5_outlier_annotations_DAPC_OutFLANK.html) and [OUTFLANK](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-04-03_OUTFLANK-yourself.html)
 
 ------
 <div id='id-section19'/>
 ### Entry 19: 2017-04-05    
 
-Note in Notebook    
+Note in Notebook     
 
-## Info update on Annotation     
+## Info update on Annotation      
 
 [Tutorial and info](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-04-05_annotation_tutorial3.html)    
 
@@ -942,14 +942,14 @@ Note in Notebook
 <div id='id-section20'/>
 ### Entry 20:2017-04-08     
 
-Notes in notebook
+Notes in notebook     
 
-## Info update on Microbiome     
+## Info update on Microbiome       
 
 ## Coding     
-
 Microbiome with Melanie
-[Analyzing 16S amplicon tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-04-10_16sAmipliconSeqData.html)    
+[Analyzing 16S amplicon tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-04-10_16sAmipliconSeqData.html)     
+
 ------
 <div id='id-section21'/>
 ### Entry 21:
